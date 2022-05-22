@@ -1,0 +1,30 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+i {
+  color: $primary;
+}
+.center {
+  text-align: center;
+}
+.margin-top {
+  margin-top: 50px;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-light {
+  background-color: $bg-color-light;
+}
+
+.bg-primary {
+  background-color: $primary;
+}

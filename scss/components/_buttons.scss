@@ -1,0 +1,21 @@
+.btn {
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 0;
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:hover,
+  &:focus {
+    color: rgba(#fff, 0.55);
+  }
+}
+
+.btn-primary {
+  &--normal {
+    padding: 0.3rem 0.5rem;
+  }
+}

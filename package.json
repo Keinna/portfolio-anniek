@@ -1,0 +1,16 @@
+{
+  "name": "nice-to-have",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.2",
+    "bootstrap": "^5.1.3",
+    "postcss-cli": "^9.1.0"
+  }
+}
