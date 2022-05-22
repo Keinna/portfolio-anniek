@@ -6,10 +6,11 @@
   transition: all 1s;
   overflow: hidden;
   position: relative;
+  border: 2px solid $secondary;
 
   &:hover,
   &:focus {
-    color: $primary;
+    color: $tertiary;
   }
 
   &::before{
