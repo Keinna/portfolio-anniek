@@ -1,4 +1,15 @@
-body {
-  font-family: "Roboto", sans-serif;
+.heading{
+  font-size: 6rem;
+
+  &--large{
+    font-size: 6.5rem;
+  }
+
+  &--decorated{
+    font-size: 7rem;
+    font-weight: bold;
+  }
 }
+
+
 
