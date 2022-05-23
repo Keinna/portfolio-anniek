@@ -1,0 +1,42 @@
+.astronaut{
+    display: inline-block;
+    animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%{
+        transform: translate(0);
+    }
+    50%{
+        transform: translateY(-15px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+
+
+
+.stars__wrap {
+    // position: absolute;
+    z-index: 1;
+  }
+  
+  .star-1 {
+    left: 10%;
+    bottom: 10%;
+    -webkit-animation: opacity 5s linear infinite;
+            animation: opacity 5s linear infinite;
+  }
+
+  @keyframes opacity {
+    0% {
+      opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
