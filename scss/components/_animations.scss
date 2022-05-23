@@ -18,15 +18,18 @@
 
 
 .stars__wrap {
-    // position: absolute;
-    z-index: 1;
+    position: relative;
   }
   
   .star-1 {
-    left: 10%;
-    bottom: 10%;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 35%;
+    top: 25%;
     -webkit-animation: opacity 5s linear infinite;
             animation: opacity 5s linear infinite;
+            z-index: -1;
   }
 
   @keyframes opacity {
