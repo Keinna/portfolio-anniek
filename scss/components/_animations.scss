@@ -1,5 +1,4 @@
 .astronaut{
-    display: inline-block;
     animation: float 5s ease-in-out infinite;
 }
 
@@ -17,20 +16,39 @@
 
 
 
-.stars__wrap {
+.stars__wrapper {
     position: relative;
   }
-  
-  .star-1 {
+
+.stars{
     position: absolute;
+    -webkit-animation: opacity 5s linear infinite;
+    animation: opacity 5s linear infinite;
+    z-index: -1;
     width: 30px;
     height: 30px;
-    right: 35%;
-    top: 25%;
-    -webkit-animation: opacity 5s linear infinite;
-            animation: opacity 5s linear infinite;
-            z-index: -1;
-  }
+
+    &--1 {
+        right: 35%;
+        top: 25%;
+      }
+
+    &--2 {
+        left: 56%;
+        bottom: 33%;
+        animation-delay: 2s;
+      }
+    &--3 {
+        width: 20px;
+        height: 20px;
+        right: 10%;
+        bottom: 25%;
+        animation-delay: .5s;
+      }
+    }
+  
+
+
 
   @keyframes opacity {
     0% {
