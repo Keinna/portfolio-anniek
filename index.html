@@ -13,7 +13,10 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;0,900;1,100;1,400;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 
     <title>Portfolio Anniek :-)</title>
 </head>
@@ -24,10 +27,12 @@
             <a class="navbar-brand" href="/">
                 <img src="/assets/img/astronaut-rocket.png" alt="" width="70">
             </a>
-            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+            <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-lg-0">
@@ -59,7 +64,7 @@
                 <div class="col-md-4 d-flex justify-content-center">
                     <div class="stars_wrap">
                         <div class="astronaut d-none d-md-block">
-                            <img src="/assets/img/astronaut-star-balloon.png" alt="" class="img-fluid">
+                            <img src="/assets/img/astronaut.png" alt="" class="img-fluid">
                         </div>
                         <div class="stars_wrapper d-none d-md-block">
                             <svg class="stars stars--1">
@@ -81,7 +86,7 @@
         </div>
     </header>
 
-    <main>
+    <!-- <main>
         <section class="about has-mg">
             <h2 class="heading text-center my-5">About me</h2>
             <div class="container">
@@ -129,7 +134,7 @@
 
             </div>
         </section>
-    </main>
+    </main> -->
 
 
     <script src="/js/bootstrap.bundle.js"></script>
