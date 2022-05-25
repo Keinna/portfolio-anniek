@@ -16,11 +16,10 @@
 
 .stars__wrapper {
   position: relative;
-  left: 0;
 }
 
 .stars {
-  position: relative;
+  position: absolute;
   -webkit-animation: opacity 5s linear infinite;
   animation: opacity 5s linear infinite;
   z-index: -1;
@@ -28,21 +27,34 @@
   height: 30px;
 
   &--1 {
-    right: 35%;
-    top: 25%;
+    left: 5%;
+    top: 0%;
   }
 
   &--2 {
-    left: 56%;
-    bottom: 33%;
+    right: 10%;
+    bottom: 18%;
     animation-delay: 2s;
   }
+
   &--3 {
+    right: 10%;
+    top: 5%;
+    animation-delay: 0.5s;
+  }
+  &--4 {
     width: 20px;
     height: 20px;
-    right: 10%;
-    bottom: 25%;
+    left: 5%;
+    bottom: 40%;
     animation-delay: 0.5s;
+  }
+  &--5 {
+    width: 20px;
+    height: 20px;
+    top: 30%;
+    left: 20%;
+    animation-delay: 1s;
   }
 }
 
