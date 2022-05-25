@@ -1,71 +1,59 @@
-.astronaut{
-    animation: float 5s ease-in-out infinite;
+.astronaut {
+  animation: float 5s ease-in-out infinite;
 }
 
 @keyframes float {
-    0%{
-        transform: translate(0);
-    }
-    50%{
-        transform: translateY(-15px);
-    }
-    100%{
-        transform: translate(0);
-    }
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translate(0);
+  }
 }
 
-
-
 .stars__wrapper {
-    position: relative;
+  position: relative;
+  left: 0;
+}
+
+.stars {
+  position: relative;
+  -webkit-animation: opacity 5s linear infinite;
+  animation: opacity 5s linear infinite;
+  z-index: -1;
+  width: 30px;
+  height: 30px;
+
+  &--1 {
+    right: 35%;
+    top: 25%;
   }
 
-.stars{
-    position: absolute;
-    -webkit-animation: opacity 5s linear infinite;
-    animation: opacity 5s linear infinite;
-    z-index: -1;
-    width: 30px;
-    height: 30px;
-
-    &--1 {
-        right: 35%;
-        top: 25%;
-      }
-
-    &--2 {
-        left: 56%;
-        bottom: 33%;
-        animation-delay: 2s;
-      }
-    &--3 {
-        width: 20px;
-        height: 20px;
-        right: 10%;
-        bottom: 25%;
-        animation-delay: .5s;
-      }
-
-    // &--4 {
-    //     width: 30px;
-    //     height: 30px;
-    //     right: 10%;
-    //     top: 20%;
-    //     animation-delay: .3s;
-    //   }
-    }
-  
-
-
-
-  @keyframes opacity {
-    0% {
-      opacity: 0;
-    }
-    50%{
-        opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
+  &--2 {
+    left: 56%;
+    bottom: 33%;
+    animation-delay: 2s;
   }
+  &--3 {
+    width: 20px;
+    height: 20px;
+    right: 10%;
+    bottom: 25%;
+    animation-delay: 0.5s;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
