@@ -3,36 +3,42 @@
   text-transform: uppercase;
   font-weight: bold;
   border-radius: 0;
-  transition: all 1s;
-  overflow: hidden;
-  position: relative;
   border: 2px solid $secondary;
+  overflow: hidden;
 
   &:hover,
   &:focus {
     color: $tertiary;
   }
 
-  &::before{
-    content: '';
-    position: absolute;
-    top:0;
-    left: -50px;
-    width: 0;
-    height: 100%;
-    background-color: $secondary;
-    transform: skewX(35deg);
-    z-index: -1;
-    transition: width 1s;
+  &--primary {
+    position: relative;
+    transition: all 1s;
 
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -20px;
+      width: 0;
+      height: 100%;
+      background-color: $secondary;
+      transform: skewX(35deg);
+      z-index: -1;
+      transition: width 1s;
+    }
+
+    &:hover::before {
+      width: 150%;
+    }
   }
 
- &:hover::before{
-   width: 150%;
- }
+  &--secondary {
+    border: 2px solid $tertiary;
+    background-color: transparent;
+  }
 }
 
-
-.btn-lg{
+.btn-lg {
   padding: 1rem 1rem;
 }
