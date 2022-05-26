@@ -15,22 +15,29 @@
   margin-bottom: 2rem;
 }
 
+.card-icon {
+  width: 20px;
+  height: 20px;
+  margin: 0 1.5rem 2rem 0;
+  filter: drop-shadow(0 0 0.2rem $secondary);
+}
+
 .card-text {
   margin: 1rem 0;
 }
 
-.expandMoreContent {
+.expand-more-content {
   height: 0px;
   overflow: hidden;
-  transition: height 0.5s ease-in-out;
+  transition: height 1s ease-in-out;
   position: relative;
 }
 
-.expandMoreContent.expand-active {
+.expand-more-content.expand-active {
   height: auto;
-  transition: height 0.5s ease-in-out;
+  transition: height 1s ease-in-out;
 }
 
-.expandMoreHolder {
-  padding: 15px 0;
+.expand-more-holder {
+  padding: 15px 0 0 0;
 }
