@@ -35,6 +35,12 @@ body {
   min-height: 100vh;
 }
 
+a {
+  color: $secondary;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 .has-mg {
   margin-top: 0rem;
   margin-bottom: 0rem;
@@ -44,8 +50,7 @@ body {
   }
 }
 
-// .profile-picture{
+// .profile-picture {
 //   width: 250px;
 //   height: auto;
-
 // }

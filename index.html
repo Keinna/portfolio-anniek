@@ -91,47 +91,63 @@
 
     <main>
         <section class="about has-mg">
-            <h2 class="heading text-center my-5">About me</h2>
             <div class="container">
                 <div class="row gap-4">
-                    <div class="col-md-3 order-1 order-md-0">
-                        <div class="fancy-border m-4">
-                            <div class="profile-picture">
-                                <img src="/assets/img/profielfoto.jpg" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-5">
-                        <div class="swiper mySwiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <p>
-                                        I am an Alkmaar / Amsterdam based Front End Developer. Ever since I discovered
-                                        coding, Visual Studio Code
-                                        is my new best friend. I find it fascinating to see how you can turn your ideas
-                                        into real projects. Because I love
-                                        to learn new things, becoming a Front End Developer is the best step I ever took
-                                        (even though sometimes I want to throw my computer
-                                        out of the window). So far I have learned <span>HTML5</span>, <span>CSS3</span>,
-                                        <span>SASS</span>, <span>Bootstrap 4</span>,
-                                        <span>Javascript</span>, <span>Node / NPM </span>, <span>Webpack</span> and took
-                                        a peak at some
-                                        Backend stuff. At the moment I am focusing on the
-                                        <span>React</span> framework and the Harvard CS50 course.
-                                        Please check out my portfolio or my Github account if you want to see what I
-                                        have done already.
-                                    </p>
+                    <div class="col">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">About me</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Background story</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#personal" type="button" role="tab" aria-controls="personal" aria-selected="false">Personal</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+                            </li>
+                          </ul>
+                          <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                           <div class="row mt-3">
+                               <div class="col-md-4">
+                                <div class="fancy-border m-4">
+                                    <div class="profile-picture">
+                                        <img src="/assets/img/profielfoto.jpg" alt="" class="img-fluid">
+                                    </div>
                                 </div>
-                                <div class="swiper-slide">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                    Maxime
-                                    possimus tempora et quisquam ipsum, hic numquam, unde distinctio laboriosam
-                                    corporis,
-                                    mollitia ab! Doloremque ab dolorem deleniti, enim inventore earum explicabo?</div>
-                                <div class="swiper-slide">Slide 3</div>
-                            </div>
-                            <div class="swiper-pagination"></div>
-                        </div>
+                               </div>
+                               <div class="col-md-8">
+                                <h2 class="fs-1 px-5 my-5">About me</h2>
+                                <p class="px-5">
+                                    I like to create websites with distinct features and have great user experiences. I find it fascinating how you can turn your ideas into real projects. Currently, I am working at a digital marketing agency, Reyez, Alkmaar, the Netherlands. The past years I am building websites for different clients with all kinds of framework. Amongst other, HTML5, CSS, SASS, Bootstrap, Node, NPM, Javascript, React, Harvard, CS50 and Figma design github git bitbugged at lassian. One of my main focuses is to write solid code which is easy accessible. In my opinion solid code is more efficient and helps to make a website more user friendly.
 
+                                    I also like to build websites for private individuals, to help them to build ambitious but accessible web projects.
+                                </p>
+                               </div>
+                           </div>
+                              
+                            </div>
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                    <h2 class="fs-1 px-5 my-5">Background story</h2>
+                                       <p class="px-5">
+                                        I don’t have the typical developer background. I was trained as a psychomotor therapist and worked with children and young adults with disabilities. However, to fulfill the desire for creating and programming I started courses on web developing and programming.
+                                    </p>
+                                     <p class="px-5">
+                                        I love to learn new things and becoming a front end developer is the best step I ever took. With programming there is always something new to learn.
+                                     </p>
+                                     <p class="px-5">
+                                        I my spare time I love the outdoors. I am an enthusiastic kitesurfer and kitesurfed on many places around the world. Another outdoor sport I practice is sportclimbing and recently, I started gravel biking. Besides the adventures activities I am busy with mosaic projects.
+                                     </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="personal" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                          </div>
                     </div>
                 </div>
 
@@ -143,7 +159,7 @@
         <h2 class="heading text-center my-5">Projects</h2>
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 mb-2">
                     <div class="card h-100">
                         <img src="/assets/img/mockup.png" class="card-img-top mx-auto" alt="...">
                         <div class="card-body">
@@ -192,7 +208,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 mb-2">
                     <div class="card h-100">
                         <img src="/assets/img/mockup-old-portfolio.png" class="card-img-top mx-auto" alt="...">
                         <div class="card-body">
@@ -207,7 +223,7 @@
                                   </p>
                               </div>
                               <div class="expand-more-holder">
-                                  <span expand-more data-hidetext="Show less" data-showtext="Read more" data-target="showMoreContent2" class="btn btn--secondary">Read more</span>
+                                  <span expand-more data-hidetext="Show less" data-showtext="Read more" data-target="showMoreContent2" class="btn btn--secondary mb-4">Read more</span>
                               </div>
                           </p>
                           <div class="card-icon-wrapper">

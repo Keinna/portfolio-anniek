@@ -1,0 +1,17 @@
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  color: $tertiary;
+  background-color: transparent;
+  border-color: $secondary;
+  border-radius: 0;
+}
+
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link:focus {
+  border-color: $secondary;
+  color: $tertiary;
+}
+
+.nav-tabs {
+  border-bottom: 1px solid $secondary;
+}
