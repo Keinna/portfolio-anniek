@@ -50,7 +50,16 @@ a {
   }
 }
 
-// .profile-picture {
-//   width: 250px;
-//   height: auto;
-// }
+.footer__wrapper {
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-bottom: 20px;
+
+  @media (min-width: 576px) {
+    height: 15vh;
+    padding-bottom: 20px;
+    align-items: end;
+  }
+}

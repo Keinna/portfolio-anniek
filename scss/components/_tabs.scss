@@ -6,10 +6,23 @@
   border-radius: 0;
 }
 
+.nav-tabs .nav-link {
+  margin-bottom: 5px;
+  margin-left: 5px;
+  background: none;
+  border: 1px solid rgba($secondary, 0.2);
+  border-radius: 0;
+
+  @media (min-width: 576px) {
+    margin-bottom: -1px;
+  }
+}
+
 .nav-tabs .nav-link:hover,
 .nav-tabs .nav-link:focus {
   border-color: $secondary;
   color: $tertiary;
+  border-radius: 0;
 }
 
 .nav-tabs {

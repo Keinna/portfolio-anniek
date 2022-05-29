@@ -69,3 +69,44 @@
     opacity: 0;
   }
 }
+
+.spaceship {
+  position: absolute;
+  animation: linear infinite running;
+  animation-name: fly-sm;
+  animation-duration: 5s;
+
+  @media (min-width: 576px) {
+    animation-duration: 15s;
+    animation-name: fly-lg;
+  }
+}
+@keyframes fly-sm {
+  0% {
+    right: 0;
+    transform: translateY(20%);
+  }
+  100% {
+    right: 100%;
+    transform: translateY(20%);
+  }
+}
+@keyframes fly-lg {
+  0% {
+    right: 0;
+    transform: translateY(20%);
+  }
+  25% {
+    transform: translateY(20%);
+  }
+  40% {
+    transform: translateY(-30%);
+  }
+  70% {
+    transform: translateY(20%);
+  }
+  100% {
+    right: 100%;
+    transform: translateY(20%);
+  }
+}
