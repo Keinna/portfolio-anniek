@@ -41,11 +41,24 @@ a {
   text-transform: uppercase;
 }
 
+.horizontal-line {
+  background: rgb(0, 204, 204);
+  background: radial-gradient(
+    circle,
+    rgba(229, 255, 255, 1) 0%,
+    rgba(2, 25, 51, 1) 100%
+  );
+  width: 80%;
+  height: 2px;
+  margin: 5rem auto;
+  display: block;
+}
+
 .has-mg {
   margin-top: 0rem;
   margin-bottom: 0rem;
   @media (min-width: 576px) {
-    margin-top: 10rem;
+    margin-top: 11rem;
     margin-bottom: 10rem;
   }
 }

@@ -28,7 +28,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
             <a class="navbar-brand" href="/">
-                <img src="/assets/img/astro1.png" alt="" width="70">
+                <img src="/assets/img/astronaut-rocket.png" alt="" width="70">
             </a>
             <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -43,13 +43,13 @@
                         <a class="nav-link active" aria-current="page" href="/">Home</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"></a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -84,7 +84,7 @@
                             <use xlink:href="assets/img/sprite.svg#icon-stars"></use>
                         </svg>
                         <div class="astronaut">
-                            <img src="/assets/img/astron.png" alt="" class="img-fluid">
+                            <img src="/assets/img/astronaut.png" alt="" class="img-fluid">
                         </div>
                       
                 </div>
@@ -93,7 +93,7 @@
     </header>
 
     <main>
-        <section class="about has-mg">
+        <section class="about has-mg" id="about">
             <div class="container">
                 <div class="row gap-4">
                     <div class="col">
@@ -114,7 +114,7 @@
                           <div class="tab-content" id="myTabContent">
                             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                            <div class="row mt-3">
-                               <div class="col-md-4">
+                               <div class="col-md-4 p-5">
                                 <div class="fancy-border m-4">
                                     <div class="profile-picture">
                                         <img src="/assets/img/profielfoto.jpg" alt="" class="img-fluid">
@@ -156,10 +156,10 @@
 
             </div>
         </section>
-
     </main>
+
     <section class="my-5" id="projects">
-        <h2 class="heading text-center my-5">Projects</h2>
+        <h2 class="title title--section my-5">Projects</h2>
         <div class="container">
             <div class="row">
                 <!-- item 1 -->
@@ -217,7 +217,7 @@
                     <div class="card h-100">
                         <img src="/assets/img/mockup-old-portfolio.png" class="card-img-top mx-auto" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title">Titel</h5>
+                          <h5 class="card-title">Title</h5>
                           <div class="card-text">
                               <p>
                                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi id nesciunt, voluptatem non fugiat molestiae necessitatibus est quasi at laborum quas odio voluptas amet! Quas molestias modi error nostrum saepe.
@@ -231,7 +231,7 @@
                                   <span expand-more data-hidetext="Show less" data-showtext="Read more" data-target="showMoreContent2" class="btn btn--secondary">Read more</span>
                               </div>
                           <p>
-                          <div class="card-icon-wrapper my-5">
+                          <div class="card-icon-wrapper my-5 gap-5">
                             <svg class="card-icon">
                                 <use xlink:href="assets/img/sprite.svg#icon-figma"></use>
                             </svg>
@@ -285,6 +285,16 @@
             </div>
         </div>
     </section>
+
+    <section class="skills has-mg">
+        <h2 class="title title--section my-5">Skills and Tools</h2>
+    </section>
+
+    <section id="contact">
+        <h2 class="title title--section my-5">Contact</h2>
+    </section>
+
+    <div class="horizontal-line"></div>
 
     <footer>
         <div class="container footer__wrapper">

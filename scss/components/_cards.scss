@@ -20,11 +20,13 @@
   font-size: 18px;
   margin-bottom: 2rem;
 }
-
+.card-icon-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
 .card-icon {
   width: 20px;
   height: 20px;
-  margin-right: 1.5rem;
   filter: drop-shadow(0 0 0.2rem $secondary);
 }
 

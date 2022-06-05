@@ -40,6 +40,28 @@
     }
   }
 }
+
+.title {
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  &--section {
+    position: relative;
+    text-align: center;
+    &:after {
+      content: "";
+      background-color: rgba($secondary, 1);
+      display: block;
+      width: 22rem;
+      height: 0.1rem;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+    }
+  }
+}
+
 .fancy-border {
   position: relative;
 
