@@ -18,7 +18,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
 
-    <title>Portfolio Anniek :-)</title>
+    <title>Portfolio Anniek | Front-end Developer</title>
 </head>
 
 <body>
@@ -49,7 +49,10 @@
                         <a class="nav-link" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactMe">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -63,7 +66,7 @@
                     <div class="header-text-wrapper px-2 p-md-0">
                         <h2 class="heading">Hi! I'm <span class="heading heading--decorated">Anniek</span></h2>
                         <h1 class="heading heading--large">Front-end Developer</h1>
-                        <p class="mt-5"><a href="#projects" class="btn btn-lg btn--primary">Check projects</a></p>
+                        <p class="mt-5"><a href="mailto:anniek@anniek.it" class="btn btn-lg btn--primary">Send a message</a></p>
                     </div>
                 </div>
                 <div class="col-md-4 d-flex justify-content-center position-relative">
@@ -286,9 +289,9 @@
         </div>
     </section>
 
-    <section class="skills has-mg">
-        <h2 class="title title--section my-5">Skills and Tools</h2>
+    <section class="skills has-mg" id="skills">
         <div class="container">
+            <h2 class="title title--section my-5">Skills and Tools</h2>
             <div class="skills__wrapper gap-5">
                 <div class="skills-card">
                     <svg class="skills-icon">
@@ -329,9 +332,9 @@
                 </div>
                 <div class="skills-card">
                     <svg class="skills-icon">
-                        <use xlink:href="assets/img/sprite.svg#icon-visualstudiocode"></use>
+                        <use xlink:href="assets/img/sprite.svg#icon-webpack"></use>
                     </svg>
-                    <h5 class="skills-title">VS Code</h5>
+                    <h5 class="skills-title">Webpack</h5>
                 </div>
                 <div class="skills-card">
                     <svg class="skills-icon">
@@ -353,9 +356,9 @@
                 </div>
                 <div class="skills-card">
                     <svg class="skills-icon">
-                        <use xlink:href="assets/img/sprite.svg#icon-webpack"></use>
+                        <use xlink:href="assets/img/sprite.svg#icon-visualstudiocode"></use>
                     </svg>
-                    <h5 class="skills-title">Webpack</h5>
+                    <h5 class="skills-title">VS Code</h5>
                 </div>
                 <div class="skills-card">
                     <svg class="skills-icon">
@@ -380,16 +383,37 @@
         
     </section>
 
-    <section id="contact">
+    <section id="contactMe">
+      <div class="container">
         <h2 class="title title--section my-5">Contact</h2>
-        <a href="mailto:info@anniek.it">mail me</a>
+        <div class="contact__wrapper">
+            <p>Would you like to get in touch? <br>
+            Please use the button below to send a message.
+        </p>
+        <a href="mailto:anniek@anniek.it" class="btn btn-lg btn--primary">Send a message</a>
+        <div class="contact-icon-block">
+            <a href="https://www.linkedin.com/in/anniek-bisschop" target="__blanc">
+                <svg class="contact-icon">
+                    <use xlink:href="assets/img/sprite.svg#icon-linkedin"></use>
+                </svg>
+            </a>
+            <a href="https://github.com/Keinna" target="__blanc">
+                <svg class="contact-icon">
+                    <use xlink:href="assets/img/sprite.svg#icon-github"></use>
+                </svg>
+            </a>
+        </div>
+        </div>
+      </div>
     </section>
 
     <div class="horizontal-line"></div>
 
     <footer>
         <div class="container footer__wrapper">
-                <p class="text-center d-inline"> &copy; Anniek 2022 </p>
+                <p class="text-center d-inline"> 
+                    &copy; Anniek 2022
+                </p>
                 <img src="/assets/img/astronaut-spaceship.png" alt="" class="img-fluid spaceship" width="100"> 
         </div>
     </footer>
