@@ -21,9 +21,15 @@
 </head>
 
 <body>
+    <header>
+    <a href="#main-content" class="skip-nav-link">
+        Skip navigation
+    </a>
+
     <div id="progress">
-      <span id="progress-value">&#8593;</span>
-    </div>
+        <span id="progress-value">&#8593;</span>
+      </div>
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
             <a class="navbar-brand" href="/">
@@ -51,14 +57,14 @@
                         <a class="nav-link" href="#skills">Skills</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contactMe">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <header class="has-mg">
+    <div class="has-mg">
         <div class="container my-5">
             <div class="row align-items-center">
                 <div class="col-md-8 text-center text-md-start">
@@ -91,59 +97,58 @@
                 </div>
             </div>
         </div>
-    </header>
-
+    </div>
+</header>
     <!--*********************About section**********************-->
 
-    <main>
+    <main id="main-content">
         <section class="about has-mg" id="about">
             <div class="container">
                 <div class="row gap-4">
                     <div class="col">
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                             <li class="nav-item" role="presentation">
-                              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">About me</button>
+                              <button class="nav-link active" id="aboutme-tab" data-bs-toggle="tab" data-bs-target="#aboutme" type="button" role="tab" aria-controls="aboutme" aria-selected="true">About me</button>
                             </li>
                             <li class="nav-item" role="presentation">
                               <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Background story</button>
                             </li>
                             <li class="nav-item" role="presentation">
-                              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#personal" type="button" role="tab" aria-controls="personal" aria-selected="false">Personal</button>
+                              <button class="nav-link" id="contactMe-tab" data-bs-toggle="tab" data-bs-target="#personal" type="button" role="tab" aria-controls="personal" aria-selected="false">Personal</button>
                             </li>
                             <li class="nav-item" role="presentation">
-                              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Contact</button>
+                              <a class="nav-link" id="contactMe-tab" data-bs-toggle="tab" data-bs-target="#contactMe" type="button" role="tab" aria-controls="contactMe" aria-selected="false">Contact</a>
                             </li>
                           </ul>
+                    <!--*****************tabcontent**************88-->
                           <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                           <div class="row mt-3">
-                               <div class="col-md-4 p-5">
-                                <div class="fancy-border m-4">
-                                    <div class="profile-picture">
-                                        <img src="/assets/img/profielfoto.jpg" alt="" class="img-fluid">
+                                <div class="tab-pane fade show active" id="aboutme" role="tabpanel" aria-labelledby="aboutme-tab" tabindex="0">
+                                    <div class="row mt-3">
+                                        <div class="col-md-4 p-5">
+                                            <div class="fancy-border m-4">
+                                                <div class="profile-picture">
+                                                    <img src="/assets/img/profielfoto.jpg" alt="" class="img-fluid">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p class="px-5  mt-5 about__text">
+                                                I like to create websites that look attractive and have great user experience at the same time. I love how you can make a design turn into something real. Sometimes I can get lost in the details to add a little something extra.
+                                            </p>
+                                            <p class="px-5 about__text">
+                                                Currently I am working at a digital agency in Alkmaar, the Netherlands. The past years I have been building websites for different clients with all kinds of request. They range from small to really large projects. To accomplish this I have worked with several other developers. 
+                                            </p>
+                                            <p class="px-5 about__text">
+                                            Every day I try to write better code. In a way that it is more reusable and easy to maintain. I keep in mind that other people have to read and understand my code as well.   
+                                            </p>
+                                            <p class="px-5 about__text">
+                                            One of my next goals is to really get a good grasp of REACT. 
+                                            </p>
+                                            <p class="mt-5 px-5"><a href="mailto:anniek@anniek.it" class="btn btn-lg btn--primary">Send a message</a></p>
+                                        </div>
                                     </div>
                                 </div>
-                               </div>
-                               <div class="col-md-8">
-                                <h2 class="fs-1 px-5 my-5">About me</h2>
-                                <p class="px-5 about__text">
-                                    I like to create websites that look attractive and have great user experience at the same time. I love how you can make a design turn into something real. Sometimes I can get lost in the details to add a little something extra.
-                                </p>
-                                <p class="px-5 about__text">
-                                    Currently I am working at a digital agency in Alkmaar, the Netherlands. The past years I have been building websites for different clients with all kinds of request. They range from small to really large projects. To accomplish this I have worked with several other developers. 
-                                </p>
-                                <p class="px-5 about__text">
-                                   Every day I try to write better code. In a way that it is more reusable and easy to maintain. I keep in mind that other people have to read and understand my code as well.   
-                                </p>
-                                <p class="px-5 about__text">
-                                 One of my next goals is to really get a good grasp of REACT. 
-                                </p>
-                                <p class="mt-5 px-5"><a href="mailto:anniek@anniek.it" class="btn btn-lg btn--primary">Send a message</a></p>
-                               </div>
-                           </div>
-                              
-                            </div>
-                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
                                 <div class="row">
                                     <div class="col-md-8">
                                     <h2 class="fs-1 px-5 my-5">Background story</h2>
@@ -159,8 +164,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="personal" role="tabpanel" aria-labelledby="contact-tab">...</div>
-                            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                            <div class="tab-pane fade" id="personal" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...</div>
+                            <div class="tab-pane fade" id="contactMe" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">...</div>
                           </div>
                     </div>
                 </div>
@@ -183,11 +188,30 @@
                           <h5 class="card-title">Portfolio</h5>
                           <div class="card-text">
                               <p>
-                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi id nesciunt, voluptatem non fugiat molestiae necessitatibus est quasi at laborum quas odio voluptas amet! Quas molestias modi error nostrum saepe.
+                                  <h4>Highlights of this project</h4>
+                                  <ul>
+                                      <li>Used sprite-SVG for all icons</li>
+                                      <li>Skip link</li>
+                                      <li>Custom hamburgerbutton on mobile</li>
+                                      <li>Scroll to top with progress</li>
+                                  </ul>
                               </p>
                               <div class="expand-more-content" id="showMoreContent1">
-                                  <p>
-                                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores laborum et deleniti, possimus, labore itaque repudiandae facilis dolorem atque hic temporibus voluptatibus at quasi cum, laudantium eaque incidunt dignissimos quam?
+                                <p>
+                                    <b>Sprite-SVG -</b> 
+                                    First time I used a sprite-file with all the SVG's in it. You can access all the icons through this file. So you only have one http request (instead of 10 files). 
+                                </p>
+                                <p>
+                                    <b> Skip links - </b> 
+                                    In my opnion skip links are important. They allow keyboard-only users, sighted or not, to navigate more easily through your page.
+                                </p>
+                                <p>
+                                    <b>Custom hamburgerbutton - </b> 
+                                    This project has a custom hamburgerbutton. When you click it, one bar floats away. The other two make the cross.
+                                </p>
+                                <p>
+                                    <b>Scroll to top -</b>
+                                    This button will show when you scroll down the page. The colored border will show where you are on the page. Nice to have when your page has a lot of content.
                                   </p>
                               </div>
                               <div class="expand-more-holder">
@@ -316,8 +340,9 @@
                     <svg class="skills-icon">
                         <use xlink:href="assets/img/sprite.svg#icon-figma"></use>
                     </svg>
-                    <h5 class="skills-title">Figma</h5>
+                    <h5 class="skills-title">Figma</h5>      
                 </div>
+
                 <div class="skills-card">
                     <svg class="skills-icon">
                         <use xlink:href="assets/img/sprite.svg#icon-html5"></use>
@@ -404,7 +429,7 @@
 
 <!--*********************Contact section**********************-->
 
-    <section id="contactMe">
+    <section id="contact">
       <div class="container">
         <h2 class="title title--section my-5">Contact</h2>
         <div class="contact__wrapper">
