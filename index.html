@@ -183,39 +183,103 @@
                 <!-- item 1 -->
                 <div class="col-md-6 mb-2">
                     <div class="card h-100">
-                        <img src="/assets/img/mockup.png" class="card-img-top mx-auto" alt="mockup portfolio">
+                        <img src="/assets/img/mockup-ecommerce.png" class="card-img-top mx-auto" alt="mockup e-commerce project">
                         <div class="card-body">
-                          <h5 class="card-title">Portfolio</h5>
+                          <h3 class="card-title">Javascript e-commerce project</h3>
                           <div class="card-text">
-                              <p>
-                                  <h4>Highlights of this project</h4>
-                                  <ul>
-                                      <li>Used sprite-SVG for all icons</li>
-                                      <li>Skip link</li>
-                                      <li>Custom hamburgerbutton on mobile</li>
-                                      <li>Scroll to top with progress</li>
-                                  </ul>
-                              </p>
+                            <h3 class="mb-4 card-title--project">Highlights project</h3>
+                                <ul>
+                                    <li>Total number of items in cart visible in navigation</li>
+                                    <li>Checkout cart functionality</li>
+                                    <li>Loads data from 'database'</li>
+                                    <li>Vanilla Javascript project</li>
+                                </ul>
+                            
                               <div class="expand-more-content" id="showMoreContent1">
-                                <p>
-                                    <b>Sprite-SVG -</b> 
-                                    First time I used a sprite-file with all the SVG's in it. You can access all the icons through this file. So you only have one http request (instead of 10 files). 
+                                <p class="mt-4">
+                                    <span class="title-expand-more">Total number of items in cart visible in navigation</span><br>
+                                   This badge will always be visible in the navigation. It shows the total amount of items in your cart. Thanks to local storage it will always show the right amount of items. One click brings you to the cart with the right amount of items and the right price
                                 </p>
                                 <p>
-                                    <b> Skip links - </b> 
-                                    In my opnion skip links are important. They allow keyboard-only users, sighted or not, to navigate more easily through your page.
+                                    <span class="title-expand-more">Checkout cart functionality</span><br>
+                                   You can add or remove items. It is also possible to clear the whole cart at once. At the bottom of the cart you can see the total amount before you purchase. 
                                 </p>
                                 <p>
-                                    <b>Custom hamburgerbutton - </b> 
-                                    This project has a custom hamburgerbutton. When you click it, one bar floats away. The other two make the cross.
+                                    <span class="title-expand-more">Loads data from 'database'</span><br> 
+                                    The data for the items is coming from a different file. This file mimicks a database. When you add data to the file, the javascript will display the right price, name, image and description in the store dynamically.
                                 </p>
                                 <p>
-                                    <b>Scroll to top -</b>
-                                    This button will show when you scroll down the page. The colored border will show where you are on the page. Nice to have when your page has a lot of content.
+                                    <span class="title-expand-more">Vanilla Javascript project</span><br>
+                                    However it would probably be easier to use a framework to set up a store. This project was a great way to pratice my vanilla javascript skills.
                                   </p>
                               </div>
                               <div class="expand-more-holder">
                                   <span expand-more data-hidetext="Show less" data-showtext="Read more" data-target="showMoreContent1" class="btn btn--secondary">Read more</span>
+                              </div>
+                        
+
+                          <div class="card-icon-wrapper my-5 gap-5">
+                            <svg class="card-icon">
+                                <use xlink:href="assets/img/sprite.svg#icon-html5"></use>
+                            </svg>
+                            <svg class="card-icon">
+                                <use xlink:href="assets/img/sprite.svg#icon-css3"></use>
+                            </svg>
+                            <svg class="card-icon">
+                                <use xlink:href="assets/img/sprite.svg#icon-javascript"></use>
+                            </svg>
+                            <svg class="card-icon">
+                                <use xlink:href="assets/img/sprite.svg#icon-visualstudiocode"></use>
+                            </svg>
+                            <svg class="card-icon">
+                                <use xlink:href="assets/img/sprite.svg#icon-github"></use>
+                            </svg>
+                          </div>
+
+                          <div class="card-button__wrapper">
+                            <a href="https://e-commerce-project.anniek.it/" class="btn btn-lg btn--primary mb-4 mb-md-2 me-2">Go to live project</a>
+                            <a href="https://github.com/Keinna/e-commerce" class="btn btn-lg btn--primary mb-4 mb-md-2 me-2">Go to source code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+
+                <!--item 2, portfolio-->
+                <div class="col-md-6 mb-2">
+                    <div class="card h-100">
+                        <img src="/assets/img/mockup-portfolio.png" class="card-img-top mx-auto" alt="mockup portfolio">
+                        <div class="card-body">
+                          <h3 class="card-title">Portfolio</h3>
+                          <div class="card-text">
+                            <h3 class="mb-4 card-title--project">Highlights project</h3>
+                                <ul>
+                                    <li>Used sprite-SVG for all icons</li>
+                                    <li>Skip link</li>
+                                    <li>Custom hamburgerbutton on mobile</li>
+                                    <li>Scroll to top with progress</li>
+                                </ul>
+                            
+                              <div class="expand-more-content" id="showMoreContent2">
+                                <p class="mt-4">
+                                    <span class="title-expand-more">Sprite-SVG </span><br>
+                                    First time I used a sprite-file with all the SVG's in it. You can access all the icons through this file. So you only have one http request (instead of 10 files). 
+                                </p>
+                                <p>
+                                    <span class="title-expand-more">Skip link</span><br>
+                                    In my opnion skip links are important. They allow keyboard-only users, sighted or not, to navigate more easily through your page.
+                                </p>
+                                <p>
+                                    <span class="title-expand-more">Custom hamburgerbutton</span><br> 
+                                    This project has a custom hamburgerbutton. When you click it, one bar floats away. The other two make the cross.
+                                </p>
+                                <p>
+                                    <span class="title-expand-more">Scroll to top</span><br>
+                                    This button will show when you scroll down the page. The colored border will show where you are on the page. Nice to have when your page has a lot of content.
+                                  </p>
+                              </div>
+                              <div class="expand-more-holder">
+                                  <span expand-more data-hidetext="Show less" data-showtext="Read more" data-target="showMoreContent2" class="btn btn--secondary">Read more</span>
                               </div>
                         
 
@@ -251,34 +315,48 @@
                             <a href="https://github.com/Keinna/portfolio-anniek/" class="btn btn-lg btn--primary mb-4 mb-md-2 me-2">Go to source code</a>
                             </div>
                         </div>
+                        </div>
                     </div>
                 </div>
-                </div>
                 
-                <!-- item 2, previous portfolio -->
+                <!-- item 3, previous portfolio -->
                 <div class="col-md-6 mb-2">
                     <div class="card h-100">
-                        <img src="/assets/img/mockup-old-portfolio.png" class="card-img-top mx-auto" alt="...">
+                        <img src="/assets/img/mockup-previous-portfolio.png" class="card-img-top mx-auto" alt="mockup previous portfolio">
                         <div class="card-body">
                           <h5 class="card-title">Previous portfolio</h5>
                           <div class="card-text">
-                              <p>
-                                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi id nesciunt, voluptatem non fugiat molestiae necessitatibus est quasi at laborum quas odio voluptas amet! Quas molestias modi error nostrum saepe.
-                              </p>
-                              <div class="expand-more-content" id="showMoreContent2">
-                                  <p>
-                                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores laborum et deleniti, possimus, labore itaque repudiandae facilis dolorem atque hic temporibus voluptatibus at quasi cum, laudantium eaque incidunt dignissimos quam?
+                            <h3 class="mb-4">Highlights project</h3>
+                            <ul>
+                                <li>Work/projects filter (Javascript)</li>
+                                <li>Inner and outer shadow effects</li>
+                                <li>Shows loader/spinner animation</li>
+                                <li>BEM methodology</li>
+                            </ul>
+                              <div class="expand-more-content" id="showMoreContent3">
+                                <p class="mt-4">
+                                    <span class="title-expand-more">Work/projects filter (Javascript)</span><br>
+                                    With this filter you can choose which projects you want to see. The default is set to 'all'
+                                </p>
+                                <p>
+                                    <span class="title-expand-more">Inner and outer shadow effects / animations</span><br>
+                                   The shadows give the important items on the page some depth. Which makes it more interesting. The animations give the page a more playful appearance.
+                                </p>
+                                <p>
+                                    <span class="title-expand-more">Shows loader/spinner animation</span><br> 
+                                    When the larger images of the project are taking some time to load, you will see a loader/spinner animation.
+                                </p>
+                                <p>
+                                    <span class="title-expand-more">BEM methodology</span><br>
+                                    The code in this project is mostly written with the BEM method. It helps writing cleaner code.
                                   </p>
                               </div>
                               <div class="expand-more-holder">
-                                  <span expand-more data-hidetext="Show less" data-showtext="Read more" data-target="showMoreContent2" class="btn btn--secondary">Read more</span>
+                                  <span expand-more data-hidetext="Show less" data-showtext="Read more" data-target="showMoreContent3" class="btn btn--secondary">Read more</span>
                               </div>
                         
 
                           <div class="card-icon-wrapper my-5 gap-5">
-                            <svg class="card-icon">
-                                <use xlink:href="assets/img/sprite.svg#icon-figma"></use>
-                            </svg>
                             <svg class="card-icon">
                                 <use xlink:href="assets/img/sprite.svg#icon-html5"></use>
                             </svg>
@@ -307,6 +385,8 @@
                     </div>
                     </div>
                 </div>
+
+              
         </div>
 
         <div class="container">

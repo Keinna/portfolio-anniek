@@ -17,8 +17,13 @@
 }
 
 .card-title {
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 2rem;
+  font-weight: bold;
+
+  &--project {
+    font-size: 17px;
+  }
 }
 .card-icon-wrapper {
   display: flex;
@@ -34,7 +39,12 @@
 .card-text {
   margin: 1rem 0;
 }
-
+.title-expand-more {
+  color: $tertiary;
+  text-decoration: underline;
+  font-size: 18px;
+  margin-bottom: 0.2rem;
+}
 .expand-more-content {
   height: 0px;
   overflow: hidden;
