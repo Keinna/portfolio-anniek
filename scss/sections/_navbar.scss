@@ -1,3 +1,6 @@
+.navbar{
+  margin-top: 15px;
+}
 .navbar-nav {
   align-items: center;
 }
@@ -8,6 +11,10 @@
   font-size: 20px;
   font-weight: bold;
 }
+.nav-item {
+  margin: 0 5px;
+}
+
 
 .navbar-dark .navbar-nav .nav-link {
   color: $tertiary;
