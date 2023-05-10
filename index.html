@@ -208,37 +208,103 @@
         <h2 class="title title--section my-5">Projects</h2>
         <div class="container">
             <div class="row gapy-5">
-                <!-- item 1 -->
+                <!--item 1-->
+                <div class="col-md-6 my-2">
+                    <div class="card h-100">
+                        <a href="https://github.com/Keinna/search-images-api-react"><img src="/assets/img/mockup-react-images-api.png" class="card-img-top mx-auto" alt="mockup react images api"></a>
+                        <div class="card-body">
+                          <h3 class="card-title">React search images API</h3>
+                          <div class="card-text">
+                            <h3 class="mb-4 card-title--project">Highlights project</h3>
+                                <ul>
+                                    <li>Fetch data from external API</li>
+                                    <li>Searchbar component</li>
+                                    <li>Background component</li>
+                                    <li>Image display</li>
+                                </ul>
+                            
+                              <div class="expand-more-content" id="showMoreContent5">
+                                <p class="my-4">
+                                    <span class="title-expand-more">Fetch data from external API</span><br>
+                                  In this case Axios is used to fetch image data from an external API endpoint (Unsplash API). The searchImages function takes a search term as an argument and returns a Promise that resolves to an array of image data. The axios.get method is used to make a GET request to the Unsplash API endpoint for searching photos, passing in the search term as a query parameter and an Authorization header with the client ID. The response data is then extracted from the response object and returned.
+                                </p>
+                                <p class="my-4">
+                                    <span class="title-expand-more">SearchBar component</span><br>
+                                    The SearchBar component renders a search bar with a label and input field. The component uses the useState hook to manage the state of the search term input field and the onSubmit prop to handle form submission. When the user submits the form (by pressing enter), the onSubmit function passed in as a prop is called with the current value of the search term input field.
+                                </p>
+                                <p class="my-4">
+                                    <span class="title-expand-more">Background component</span><br> 
+                                    If there are no images to display, a background component is shown. This can help improve the user experience by preventing the page from appearing empty or unfinished.
+                                </p>
+                                <p class="my-4">
+                                    <span class="title-expand-more">Image display</span><br>
+                                    The images are displayed in a list format using a component called ImageList. The images are placed in a responsive grid. 
+                                  </p>
+                              </div>
+                              <div class="expand-more-holder">
+                                  <span expand-more data-hidetext="Show less" data-showtext="Read more" data-target="showMoreContent5" class="btn btn--secondary">Read more</span>
+                              </div>
+                        
+
+                          <div class="card-icon-wrapper my-5 gap-5">
+                            <svg class="card-icon">
+                                <use xlink:href="assets/img/sprite.svg#icon-html5"></use>
+                            </svg>
+                            <svg class="card-icon">
+                                <use xlink:href="assets/img/sprite.svg#icon-css3"></use>
+                            </svg>
+                            <svg class="card-icon">
+                                <use xlink:href="assets/img/sprite.svg#icon-react"></use>
+                            </svg>
+                            <svg class="card-icon">
+                                <use xlink:href="assets/img/sprite.svg#icon-npm"></use>
+                            </svg>
+                            <svg class="card-icon">
+                                <use xlink:href="assets/img/sprite.svg#icon-visualstudiocode"></use>
+                            </svg>
+                            <svg class="card-icon">
+                                <use xlink:href="assets/img/sprite.svg#icon-github"></use>
+                            </svg>
+                          </div>
+
+                          <div class="card-button__wrapper">
+                            <a href="https://github.com/Keinna/search-images-api-react" class="btn btn-lg btn--primary mb-4 mb-md-2 me-2">Go to source code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <!-- item 2 -->
                 <div class="col-md-6 my-2">
                     <div class="card h-100">
                         <a href="https://e-commerce-project.anniek.it/"><img src="/assets/img/mockup-ecommerce.png" class="card-img-top mx-auto" alt="mockup e-commerce project"></a>
                         <div class="card-body">
-                          <h3 class="card-title">Javascript e-commerce project</h3>
+                          <h3 class="card-title">JavaScript e-commerce project</h3>
                           <div class="card-text">
                             <h3 class="mb-4 card-title--project">Highlights project</h3>
                                 <ul>
                                     <li>Total number of items in cart visible in navigation</li>
                                     <li>Checkout cart functionality</li>
                                     <li>Loads data from 'database'</li>
-                                    <li>Vanilla Javascript project</li>
+                                    <li>Vanilla JavaScript project</li>
                                 </ul>
                             
                               <div class="expand-more-content" id="showMoreContent1">
-                                <p class="mt-4">
+                                <p class="my-4">
                                     <span class="title-expand-more">Total number of items in cart visible in navigation</span><br>
                                    This badge will always be visible in the navigation. It shows the total amount of items in your cart. Thanks to local storage it will always show the right amount of items. One click brings you to the cart with the right amount of items and the right price
                                 </p>
-                                <p>
+                                <p class="my-4">
                                     <span class="title-expand-more">Checkout cart functionality</span><br>
                                    You can add or remove items. It is also possible to clear the whole cart at once. At the bottom of the cart you can see the total amount before you purchase. 
                                 </p>
-                                <p>
+                                <p class="my-4">
                                     <span class="title-expand-more">Loads data from 'database'</span><br> 
-                                    The data for the items is coming from a different file. This file mimicks a database. When you add data to the file, the javascript will display the right price, name, image and description in the store dynamically.
+                                    The data for the items is coming from a different file. This file mimicks a database. When you add data to the file, the JavaScript will display the right price, name, image and description in the store dynamically.
                                 </p>
-                                <p>
-                                    <span class="title-expand-more">Vanilla Javascript project</span><br>
-                                    However it would probably be easier to use a framework to set up a store. This project was a great way to practice my vanilla javascript skills.
+                                <p class="my-4">
+                                    <span class="title-expand-more">Vanilla JavaScript project</span><br>
+                                    However it would probably be easier to use a framework to set up a store. This project was a great way to practice my vanilla JavaScript skills.
                                   </p>
                               </div>
                               <div class="expand-more-holder">
@@ -273,7 +339,7 @@
                 </div>
                 </div>
 
-                <!--item 2, portfolio-->
+                <!--item 3, portfolio-->
                 <div class="col-md-6 my-2">
                     <div class="card h-100">
                         <a href="/"><img src="/assets/img/mockup-portfolio.png" class="card-img-top mx-auto" alt="mockup portfolio"></a>
@@ -289,19 +355,19 @@
                                 </ul>
                             
                               <div class="expand-more-content" id="showMoreContent2">
-                                <p class="mt-4">
+                                <p class="my-4">
                                     <span class="title-expand-more">Sprite-SVG </span><br>
                                     First time I used a sprite-file with all the SVG's in it. You can access all the icons through this file. So you only have one http request (instead of 10 files). 
                                 </p>
-                                <p>
+                                <p class="my-4">
                                     <span class="title-expand-more">Skip link</span><br>
                                     In my opnion skip links are important. They allow keyboard-only users, sighted or not, to navigate more easily through your page.
                                 </p>
-                                <p>
+                                <p class="my-4">
                                     <span class="title-expand-more">Custom hamburgerbutton</span><br> 
                                     This project has a custom hamburgerbutton. When you click it, one bar floats away. The other two make the cross.
                                 </p>
-                                <p>
+                                <p class="my-4">
                                     <span class="title-expand-more">Scroll to top</span><br>
                                     This button will show when you scroll down the page. The colored border will show where you are on the page. Nice to have when your page has a lot of content.
                                   </p>
@@ -347,7 +413,7 @@
                     </div>
                 </div>
                 
-                <!-- item 3, previous portfolio -->
+                <!-- item 4, previous portfolio -->
                 <div class="col-md-6 my-2">
                     <div class="card h-100">
                         <a href="https://onepager-balloon.anniek.it/">
@@ -358,24 +424,24 @@
                             <h3 class="mb-4">Highlights project</h3>
                             <ul>
                                 <li>Webpack</li>
-                                <li>Animations on scroll (Javascript)</li>
+                                <li>Animations on scroll (JavaScript)</li>
                                 <li>Worked with devdependencies</li>
                                 <li>Sourceset</li>
                             </ul>
                               <div class="expand-more-content" id="showMoreContent3">
-                                <p class="mt-4">
+                                <p class="my-4">
                                     <span class="title-expand-more">Webpack</span><br>
                                   Used webpack as a module bundler. Although this project is not that large, it was a great project to practice with webpack. See the way it behaves and what it does with the files.
                                 </p>
-                                <p>
-                                <span class="title-expand-more">Animations on scroll (Javascript)</span><br>
-                                The logo changes in width and height on scroll, the color of the total header changes on scroll and it shows you where you are thanks to the active links in Javascript.
+                                <p class="my-4">
+                                <span class="title-expand-more">Animations on scroll (JavaScript)</span><br>
+                                The logo changes in width and height on scroll, the color of the total header changes on scroll and it shows you where you are thanks to the active links in JavaScript.
                                 </p>
-                                <p>
+                                <p class="my-4">
                                 <span class="title-expand-more">Worked with devdependencies</span><br> 
                                   Added a couple of dependencies to add functionality to the page.
                                 </p>
-                                <p>
+                                <p class="my-4">
                                 <span class="title-expand-more">Sourceset</span><br> 
                                   Used sourceset on the images on the page. This makes the page more responsive. Also the page will load faster because the browser gets to make the decision. A smaller image is picked on a smaller device.
                                 </p>
@@ -420,7 +486,7 @@
                     </div>
                 </div>
 
-                 <!-- item 4, previous portfolio -->
+                 <!-- item 5, previous portfolio -->
                 <div class="col-md-6 my-2">
                     <div class="card h-100">
                         <a href="https://previous-portfolio.anniek.it/"><img src="/assets/img/mockup-previous-portfolio.png" class="card-img-top mx-auto" alt="mockup previous portfolio"></a>
@@ -429,25 +495,25 @@
                           <div class="card-text">
                             <h3 class="mb-4">Highlights project</h3>
                             <ul>
-                                <li>Work/projects filter (Javascript)</li>
+                                <li>Work/projects filter (JavaScript)</li>
                                 <li>Inner and outer shadow effects</li>
                                 <li>Shows loader/spinner animation</li>
                                 <li>BEM methodology</li>
                             </ul>
                               <div class="expand-more-content" id="showMoreContent4">
-                                <p class="mt-4">
-                                    <span class="title-expand-more">Work/projects filter (Javascript)</span><br>
+                                <p class="my-4">
+                                    <span class="title-expand-more">Work/projects filter (JavaScript)</span><br>
                                     With this filter you can choose which projects you want to see. The default is set to 'all'
                                 </p>
-                                <p>
+                                <p class="my-4">
                                     <span class="title-expand-more">Inner and outer shadow effects / animations</span><br>
                                    The shadows give the important items on the page some depth. Which makes it more interesting. The animations give the page a more playful appearance.
                                 </p>
-                                <p>
+                                <p class="my-4">
                                     <span class="title-expand-more">Shows loader/spinner animation</span><br> 
                                     When the larger images of the project are taking some time to load, you will see a loader/spinner animation.
                                 </p>
-                                <p>
+                                <p class="my-4">
                                     <span class="title-expand-more">BEM methodology</span><br>
                                     The code in this project is mostly written with the BEM method. It helps writing cleaner code.
                                   </p>
@@ -540,7 +606,13 @@
                     <svg class="skills-icon">
                         <use xlink:href="assets/img/sprite.svg#icon-javascript"></use>
                     </svg>
-                    <h5 class="skills-title">Javascript</h5>
+                    <h5 class="skills-title">JavaScript</h5>
+                </div>
+                <div class="skills-card">
+                    <svg class="skills-icon">
+                        <use xlink:href="assets/img/sprite.svg#icon-react"></use>
+                    </svg>
+                    <h5 class="skills-title">React</h5>
                 </div>
                 <div class="skills-card">
                     <svg class="skills-icon">
@@ -639,7 +711,7 @@
     <footer>
         <div class="container footer__wrapper">
                 <p class="text-center d-inline"> 
-                    &copy; Anniek 2022
+                    &copy; Anniek 2023
                 </p>
                 <img src="/assets/img/astronaut-spaceship.png" alt="img astronaut spaceship" class="img-fluid spaceship" width="100"> 
         </div>

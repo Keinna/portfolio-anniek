@@ -17,8 +17,8 @@
 }
 
 .card-title {
-  font-size: 20px;
-  margin-bottom: 2rem;
+  font-size: 32px;
+  margin: 2rem 0;
   font-weight: bold;
 
   &--project {
@@ -42,8 +42,8 @@
 .title-expand-more {
   color: $tertiary;
   text-decoration: underline;
-  font-size: 18px;
-  margin-bottom: 0.2rem;
+  font-size: 24px;
+  margin-bottom: 0.4rem;
 }
 .expand-more-content {
   height: 0px;
