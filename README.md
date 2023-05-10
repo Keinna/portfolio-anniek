@@ -24,3 +24,6 @@ sass --watch scss/styles.scss:css/styles.min.css --style compressed
 
 ### Icons 
 Icons are from https://icomoon.io/
+
+### Confetti
+https://www.npmjs.com/package/canvas-confetti

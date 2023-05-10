@@ -40,3 +40,18 @@ let calcScrollValue = () => {
 };
 window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
+
+//trigger confetti on hover
+const confettiTrigger = document.querySelector("#confetti-trigger");
+confettiTrigger.addEventListener("mouseenter", startConfetti);
+
+function startConfetti() {
+    confetti({
+        particleCount: 100,
+        spread: 70,
+        angle: 70,
+        origin: { x: 0.3, y: 0.6 },
+        colors: ["#00cccc", "#e5ffff"],
+        shapes: ["star", "square", "square"],
+    });
+}
