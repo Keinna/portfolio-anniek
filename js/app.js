@@ -55,3 +55,8 @@ function startConfetti() {
         shapes: ["star", "square", "square"],
     });
 }
+
+//update current year dynamically
+const currentYear = new Date().getFullYear();
+const currentYearElement = document.getElementById("currentYear");
+currentYearElement.textContent = currentYear;
