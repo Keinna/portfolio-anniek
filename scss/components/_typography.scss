@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
 .heading {
   font-size: 6rem;
 
@@ -9,6 +11,8 @@
     font-size: 8rem;
     font-weight: bold;
     position: relative;
+    font-family: 'DM Sans', sans-serif;
+  
 
     &::after {
       content: "";
@@ -86,17 +90,4 @@
   }
 }
 
-// In case all corners ->
 
-// &::before, &::after, &>:first-child::before, &>:first-child::after{
-// &>:first-child:after {
-//   bottom:-10px;
-//   left:-10px;
-//   border-width: 0 0 5px 5px;
-// }
-// &:after {
-//   top:-10px;
-//   right:-10px;
-//   border-width: 5px 5px 0 0;
-// }
-// }
