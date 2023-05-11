@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Front end developer portfolio website. Showcasing coding skills and projects. Get in touch with Anniek for questions, projects, or to connect.">
     <link rel="stylesheet" href="css/styles.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,9 +28,9 @@
 
     <div id="progress">
         <span id="progress-value">&#8593;</span>
-      </div>
+    </div>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" role="navigation">
         <div class="container">
             <a class="navbar-brand" href="/">
                 <img src="/assets/img/astronaut-rocket.png" alt="astronaut" width="70" loading="lazy">
@@ -100,7 +101,7 @@
 </header>
     <!--*********************About section**********************-->
 
-    <main id="main-content">
+    <main id="main-content" role="main">
         <section class="about has-mg" id="about">
             <div class="container">
                 <div class="row gap-4">
@@ -205,7 +206,7 @@
                 </div>
             </div>
         </section>
-    </main>
+   
 
 <!--*********************Projects section**********************-->
 
@@ -688,7 +689,6 @@
                 </div>
             </div>
         </div>
-        
     </section>
 
 <!--*********************Contact section**********************-->
@@ -720,16 +720,16 @@
       </div>
     </div>
   </section>
-  
+</main>
 
     <div class="horizontal-line"></div>
 
-    <footer>
+    <footer role="contentinfo">
         <div class="container footer__wrapper">
-                <p class="text-center"> 
-                    &copy; Anniek <span id="currentYear"></span>
-                </p>
-                <img src="/assets/img/astronaut-spaceship.png" alt="img astronaut spaceship" class="img-fluid spaceship" width="100" loading="lazy"> 
+            <p class="text-center"> 
+                &copy; Anniek <span id="currentYear"></span>
+            </p>
+            <img src="/assets/img/astronaut-spaceship.png" alt="img astronaut spaceship" class="img-fluid spaceship" width="100" loading="lazy"> 
         </div>
     </footer>
     <script src="/js/bootstrap.bundle.min.js"></script>
