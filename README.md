@@ -4,6 +4,8 @@ Here, you'll find a collection of my work and projects that showcase my skills a
 Feel free to explore my projects and repos.
 
 
+![Portfolio image](/assets/img/portfolio-repo-img.png/?raw=true)
+
 ### Projects
 You will find several projects that I have been working on.   
 I have really enjoyed working on these projects and I hope they demonstrate my commitment to delivering high-quality results.
