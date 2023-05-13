@@ -66,3 +66,19 @@
 .expand-more-holder {
   padding: 15px 0 0 0;
 }
+
+.filter__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter-item{
+  margin: 5px;
+}
+.filter-item.active {
+  background-color: $secondary;
+}
+

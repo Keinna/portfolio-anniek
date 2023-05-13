@@ -71,7 +71,7 @@
                     <div class="header-text-wrapper px-2 p-md-0">
                         <h2 class="heading">Hi! I'm <span class="heading heading--decorated" id="confetti-trigger">Anniek</span></h2>
                         <h1 class="heading heading--large">Front-end Developer</h1>
-                        <p class="mt-5"><a href="mailto:anniek@anniek.it" class="btn btn-lg btn--primary">Send a message</a></p>
+                        <p class="mt-5"><a href="mailto:anniek@anniek.it" class="btn btn--lg btn--primary">Send a message</a></p>
                     </div>
                 </div>
                 <div class="col-md-4 d-flex justify-content-center position-relative">
@@ -197,7 +197,7 @@
                                         <p class="px-5">I would be happy to hear from you. 
                                             Whether you have a question, a project in mind, or simply want to connect, don't hesitate to reach out. 
                                             Feel free to click on the "Get in touch" button.</p>
-                                        <p class="px-5"><a href="mailto:anniek@anniek.it" class="btn btn-lg  btn--primary">Get in touch</a></p>
+                                        <p class="px-5"><a href="mailto:anniek@anniek.it" class="btn btn--lg  btn--primary">Get in touch</a></p>
                                     </div>
                                 </div>
                           </div>
@@ -207,15 +207,23 @@
             </div>
         </section>
    
-
-<!--*********************Projects section**********************-->
-
     <section class="my-5" id="projects">
         <h2 class="title title--section my-5">Projects</h2>
         <div class="container">
-            <div class="row gapy-5">
+            
+        <div class="filter__wrapper mb-5">
+            <div class="filter-item btn btn--lg btn--primary active" data-target="all">All</div>
+            <div class="filter-item btn btn--lg btn--primary" data-target="react">React</div>
+            <div class="filter-item btn btn--lg btn--primary" data-target="javascript">JavaScript</div>
+            <div class="filter-item btn btn--lg btn--primary" data-target="bootstrap">Bootstrap</div>
+            <div class="filter-item btn btn--lg btn--primary" data-target="sass">Sass</div>
+            <div class="filter-item btn btn--lg btn--primary" data-target="animations">Animations</div>
+            <div class="filter-item btn btn--lg btn--primary" data-target="webpack">Webpack</div>
+        </div>
+
+            <div class="row gapy-5" id="projectCardsContainer">
                 <!--item 1-->
-                <div class="col-md-6 my-2">
+                <div class="col-md-6 my-2 project-card" data-categories="react">
                     <div class="card h-100">
                         <a href="https://github.com/Keinna/search-images-api-react"><img src="/assets/img/mockup-react-images-api.png" class="card-img-top mx-auto" alt="mockup react images api" loading="lazy"></a>
                         <div class="card-body">
@@ -274,14 +282,14 @@
                           </div>
 
                           <div class="card-button__wrapper">
-                            <a href="https://github.com/Keinna/search-images-api-react" class="btn btn-lg btn--primary mb-4 mb-md-2 me-2">Go to source code</a>
+                            <a href="https://github.com/Keinna/search-images-api-react" class="btn btn--lg btn--primary mb-4 mb-md-2 me-2">Go to source code</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 </div>
                 <!-- item 2 -->
-                <div class="col-md-6 my-2">
+                <div class="col-md-6 my-2 project-card" data-categories="javascript">
                     <div class="card h-100">
                         <a href="https://e-commerce-project.anniek.it/"><img src="/assets/img/mockup-ecommerce.png" class="card-img-top mx-auto" alt="mockup e-commerce project" loading="lazy"></a>
                         <div class="card-body">
@@ -337,8 +345,8 @@
                           </div>
 
                           <div class="card-button__wrapper">
-                            <a href="https://e-commerce-project.anniek.it/" class="btn btn-lg btn--primary mb-4 mb-md-2 me-2">Go to live project</a>
-                            <a href="https://github.com/Keinna/e-commerce" class="btn btn-lg btn--primary mb-4 mb-md-2 me-2">Go to source code</a>
+                            <a href="https://e-commerce-project.anniek.it/" class="btn btn--lg btn--primary mb-4 mb-md-2 me-2">Go to live project</a>
+                            <a href="https://github.com/Keinna/e-commerce" class="btn btn--lg btn--primary mb-4 mb-md-2 me-2">Go to source code</a>
                             </div>
                         </div>
                     </div>
@@ -346,7 +354,7 @@
                 </div>
 
                 <!--item 3, portfolio-->
-                <div class="col-md-6 my-2">
+                <div class="col-md-6 my-2 project-card" data-categories="javascript bootstrap animations sass">
                     <div class="card h-100">
                         <a href="/"><img src="/assets/img/mockup-portfolio.png" class="card-img-top mx-auto" alt="mockup portfolio" loading="lazy"></a>
                         <div class="card-body">
@@ -411,8 +419,8 @@
                           </div>
 
                           <div class="card-button__wrapper">
-                            <a href="/" class="btn btn-lg btn--primary mb-4 mb-md-2 me-2">Go to live project</a>
-                            <a href="https://github.com/Keinna/portfolio-anniek/" class="btn btn-lg btn--primary mb-4 mb-md-2 me-2">Go to source code</a>
+                            <a href="/" class="btn btn--lg btn--primary mb-4 mb-md-2 me-2">Go to live project</a>
+                            <a href="https://github.com/Keinna/portfolio-anniek/" class="btn btn--lg btn--primary mb-4 mb-md-2 me-2">Go to source code</a>
                             </div>
                         </div>
                         </div>
@@ -420,7 +428,7 @@
                 </div>
                 
                 <!-- item 4, previous portfolio -->
-                <div class="col-md-6 my-2">
+                <div class="col-md-6 my-2 project-card" data-categories="javascript sass webpack">
                     <div class="card h-100">
                         <a href="https://onepager-balloon.anniek.it/">
                         <img src="/assets/img/mockup-balloon.png" class="card-img-top mx-auto" alt="mockup previous portfolio" loading="lazy"></a>
@@ -489,15 +497,15 @@
                           </div>
 
                           <div class="card-button__wrapper">
-                            <a href="https://onepager-balloon.anniek.it/" class="btn btn-lg btn--primary mb-4 mb-md-2 me-2">Go to live project</a>
-                            <a href="https://github.com/Keinna/onepager-balloon" class="btn btn-lg btn--primary mb-4 mb-md-2 me-2">Go to source code</a>
+                            <a href="https://onepager-balloon.anniek.it/" class="btn btn--lg btn--primary mb-4 mb-md-2 me-2">Go to live project</a>
+                            <a href="https://github.com/Keinna/onepager-balloon" class="btn btn--lg btn--primary mb-4 mb-md-2 me-2">Go to source code</a>
                             </div>
                         </div>
                     </div>
                     </div>
                 </div>
                  <!-- item 5, sass-project -->
-                 <div class="col-md-6 my-2">
+                 <div class="col-md-6 my-2 project-card" data-categories="sass animations">
                     <div class="card h-100">
                         <a href="https://sass-project.anniek.it/"><img src="/assets/img/mockup-sass.png" class="card-img-top mx-auto" alt="mockup sass project" loading="lazy"></a>
                         <div class="card-body">
@@ -557,15 +565,15 @@
                           </div>
 
                           <div class="card-button__wrapper">
-                            <a href="https://sass-project.anniek.it/" class="btn btn-lg btn--primary mb-4 mb-md-2 me-2">Go to live project</a>
-                            <a href="https://github.com/Keinna/sass-css-mtb-project" class="btn btn-lg btn--primary mb-4 mb-md-2 me-2">Go to source code</a>
+                            <a href="https://sass-project.anniek.it/" class="btn btn--lg btn--primary mb-4 mb-md-2 me-2">Go to live project</a>
+                            <a href="https://github.com/Keinna/sass-css-mtb-project" class="btn btn--lg btn--primary mb-4 mb-md-2 me-2">Go to source code</a>
                             </div>
                         </div>
                     </div>
                     </div>
                 </div>
                  <!-- item 6, previous portfolio -->
-                <div class="col-md-6 my-2">
+                <div class="col-md-6 my-2 project-card" data-categories="javascript sass animations">
                     <div class="card h-100">
                         <a href="https://previous-portfolio.anniek.it/"><img src="/assets/img/mockup-previous-portfolio.png" class="card-img-top mx-auto" alt="mockup previous portfolio" loading="lazy"></a>
                         <div class="card-body">
@@ -624,8 +632,8 @@
                           </div>
 
                           <div class="card-button__wrapper">
-                            <a href="https://previous-portfolio.anniek.it/" class="btn btn-lg btn--primary mb-4 mb-md-2 me-2">Go to live project</a>
-                            <a href="https://github.com/Keinna/previous-portfolio" class="btn btn-lg btn--primary mb-4 mb-md-2 me-2">Go to source code</a>
+                            <a href="https://previous-portfolio.anniek.it/" class="btn btn--lg btn--primary mb-4 mb-md-2 me-2">Go to live project</a>
+                            <a href="https://github.com/Keinna/previous-portfolio" class="btn btn--lg btn--primary mb-4 mb-md-2 me-2">Go to source code</a>
                             </div>
                         </div>
                     </div>
@@ -637,7 +645,7 @@
         <!-- available when more projects in portfolio
             <div class="container">
             <div class="container text-center my-4">     
-                <button class="btn btn-lg btn--primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Load more projects ...</button>          
+                <button class="btn btn--lg btn--primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Load more projects ...</button>          
             </div>
     
             <div class="row">
@@ -775,7 +783,7 @@
             <p class="px-5">Would you like to get in touch? <br>
               I would be happy to hear from you. Whether you have a question, a project in mind, or simply want to connect, don't hesitate to reach out. Feel free to click the button below.
             </p>
-            <a href="mailto:anniek@anniek.it" class="btn btn-lg btn--primary mt-3">Send a message</a>
+            <a href="mailto:anniek@anniek.it" class="btn btn--lg btn--primary mt-3">Send a message</a>
             <div class="contact-icon-block mt-3">
               <a href="https://www.linkedin.com/in/anniek-bisschop">
                 <svg class="contact-icon">
