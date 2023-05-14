@@ -58,7 +58,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const currentYear = new Date().getFullYear();
     const currentYearElement = document.getElementById("currentYear");
     currentYearElement.textContent = currentYear;
-
     const loadMoreButton = document.getElementById("loadMore");
     const projectCardsContainer = document.getElementById(
         "projectCardsContainer",
@@ -81,6 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function displayProjectCards() {
         let visibleCardsCount = 0;
+        let categoryMatchCount = 0;
 
         projectCards.forEach((card) => {
             const cardCategories = card.dataset.categories.split(" ");
@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 } else {
                     card.style.display = "none";
                 }
-                selectedProjectsCount++;
+                categoryMatchCount++;
             } else {
                 card.style.display = "none";
             }
@@ -104,15 +104,21 @@ document.addEventListener("DOMContentLoaded", () => {
         if (selectedCategory !== "all") {
             selectedProjectsCountElement.textContent = `${capitalizeFirstLetter(
                 selectedCategory,
-            )} project(s): ${selectedProjectsCount}`;
+            )} project(s): ${categoryMatchCount}`;
         } else {
             selectedProjectsCountElement.textContent = "";
         }
 
-        if (visibleCardsCount < projectCards.length) {
-            loadMoreButton.style.display = "block";
-        } else {
+        const categoryVisibleCards = projectCards.filter(
+            (card) =>
+                selectedCategory === "all" ||
+                card.dataset.categories.includes(selectedCategory),
+        );
+
+        if (visibleCardsCount >= categoryVisibleCards.length) {
             loadMoreButton.style.display = "none";
+        } else {
+            loadMoreButton.style.display = "block";
         }
     }
 
@@ -133,8 +139,8 @@ document.addEventListener("DOMContentLoaded", () => {
         event.target.classList.add("active");
 
         selectedCategory = event.target.dataset.target;
-
         selectedProjectsCount = 0;
+        visibleCardsLimit = 6; // Reset visibleCardsLimit when a new category is selected
 
         displayProjectCards();
     }
