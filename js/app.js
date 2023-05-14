@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function handleLoadMoreClick() {
-        visibleCardsLimit += 3;
+        visibleCardsLimit += 2;
         displayProjectCards();
     }
 });    
