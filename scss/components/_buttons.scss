@@ -15,7 +15,6 @@
   &--primary {
     position: relative;
     // transition: all 1s;
-
     @media (min-width: 576px) {
       &::before {
         content: "";
@@ -34,14 +33,27 @@
         width: 150%;
       }
     }
+   
+
   }
 
   &--secondary {
     border: 2px solid $tertiary;
     background-color: transparent;
   }
+
+  &--lg {
+    padding: 1rem 1rem;
+  }
+
+  &--same-size{
+    width: 11%;
+  }
+  @media (max-width: 575px) {
+    &--same-size{
+      width: 33%;
+    }
+  }
 }
 
-.btn--lg {
-  padding: 1rem 1rem;
-}
+

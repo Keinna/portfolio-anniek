@@ -212,13 +212,13 @@
         <div class="container">
             
         <div class="filter__wrapper mb-5">
-            <div class="filter-item btn btn--lg btn--primary active" data-target="all">All</div>
-            <div class="filter-item btn btn--lg btn--primary" data-target="react">React</div>
-            <div class="filter-item btn btn--lg btn--primary" data-target="javascript">JavaScript</div>
-            <div class="filter-item btn btn--lg btn--primary" data-target="bootstrap">Bootstrap</div>
-            <div class="filter-item btn btn--lg btn--primary" data-target="sass">Sass</div>
-            <div class="filter-item btn btn--lg btn--primary" data-target="animations">Animations</div>
-            <div class="filter-item btn btn--lg btn--primary" data-target="webpack">Webpack</div>
+            <div class="filter-item btn btn--lg btn--same-size btn--primary active" data-target="all">All</div>
+            <div class="filter-item btn btn--lg btn--same-size btn--primary" data-target="react">React</div>
+            <div class="filter-item btn btn--lg btn--same-size btn--primary" data-target="javascript">JavaScript</div>
+            <div class="filter-item btn btn--lg btn--same-size btn--primary" data-target="bootstrap">Bootstrap</div>
+            <div class="filter-item btn btn--lg btn--same-size btn--primary" data-target="sass">Sass</div>
+            <div class="filter-item btn btn--lg btn--same-size btn--primary" data-target="animations">Animations</div>
+            <div class="filter-item btn btn--lg btn--same-size btn--primary" data-target="webpack">Webpack</div>
         </div>
 
             <div class="row gapy-5" id="projectCardsContainer">
@@ -288,72 +288,7 @@
                     </div>
                 </div>
                 </div>
-                <!-- item 2 -->
-                <div class="col-md-6 my-2 project-card" data-categories="javascript">
-                    <div class="card h-100">
-                        <a href="https://e-commerce-project.anniek.it/"><img src="/assets/img/mockup-ecommerce.png" class="card-img-top mx-auto" alt="mockup e-commerce project" loading="lazy"></a>
-                        <div class="card-body">
-                          <h3 class="card-title">JavaScript e-commerce project</h3>
-                          <div class="card-text">
-                            <h3 class="mb-4 card-title--highlight">Highlights:</h3>
-                                <ul>
-                                    <li>Total number of items in cart visible in navigation</li>
-                                    <li>Checkout cart functionality</li>
-                                    <li>Loads data from 'database'</li>
-                                    <li>Vanilla JavaScript project</li>
-                                </ul>
-                            
-                              <div class="expand-more-content" id="showMoreContent1">
-                                <p class="my-4">
-                                    <span class="title-expand-more">Total number of items in cart visible in navigation</span><br>
-                                   This badge will always be visible in the navigation. It shows the total amount of items in your cart. Thanks to local storage it will always show the right amount of items. One click brings you to the cart with the right amount of items and the right price
-                                </p>
-                                <p class="my-4">
-                                    <span class="title-expand-more">Checkout cart functionality</span><br>
-                                   You can add or remove items. It is also possible to clear the whole cart at once. At the bottom of the cart you can see the total amount before you purchase. 
-                                </p>
-                                <p class="my-4">
-                                    <span class="title-expand-more">Loads data from 'database'</span><br> 
-                                    The data for the items is coming from a different file. This file mimicks a database. When you add data to the file, the JavaScript will display the right price, name, image and description in the store dynamically.
-                                </p>
-                                <p class="my-4">
-                                    <span class="title-expand-more">Vanilla JavaScript project</span><br>
-                                    However it would probably be easier to use a framework to set up a store. This project was a great way to practice my vanilla JavaScript skills.
-                                  </p>
-                              </div>
-                              <div class="expand-more-holder">
-                                  <span expand-more data-hidetext="Show less" data-showtext="Read more" data-target="showMoreContent1" class="btn btn--secondary">Read more</span>
-                              </div>
-                        
 
-                          <div class="card-icon-wrapper my-5 gap-5">
-                            <svg class="card-icon">
-                                <use xlink:href="assets/img/sprite.svg#icon-html5" alt="HTML5 icon"></use>
-                            </svg>
-                            <svg class="card-icon">
-                                <use xlink:href="assets/img/sprite.svg#icon-css3" alt="CSS3 icon"></use>
-                            </svg>
-                            <svg class="card-icon">
-                                <use xlink:href="assets/img/sprite.svg#icon-javascript" alt="JavaScript icon"></use>
-                            </svg>
-                            <svg class="card-icon">
-                                <use xlink:href="assets/img/sprite.svg#icon-visualstudiocode" alt="VS Code icon"></use>
-                            </svg>
-                            <svg class="card-icon">
-                                <use xlink:href="assets/img/sprite.svg#icon-github" alt="Github icon"></use>
-                            </svg>
-                          </div>
-
-                          <div class="card-button__wrapper">
-                            <a href="https://e-commerce-project.anniek.it/" class="btn btn--lg btn--primary mb-4 mb-md-2 me-2">Go to live project</a>
-                            <a href="https://github.com/Keinna/e-commerce" class="btn btn--lg btn--primary mb-4 mb-md-2 me-2">Go to source code</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </div>
-
-                <!--item 3, portfolio-->
                 <div class="col-md-6 my-2 project-card" data-categories="javascript bootstrap animations sass">
                     <div class="card h-100">
                         <a href="/"><img src="/assets/img/mockup-portfolio.png" class="card-img-top mx-auto" alt="mockup portfolio" loading="lazy"></a>
@@ -425,6 +360,70 @@
                         </div>
                         </div>
                     </div>
+                </div>
+
+                <div class="col-md-6 my-2 project-card" data-categories="javascript">
+                    <div class="card h-100">
+                        <a href="https://e-commerce-project.anniek.it/"><img src="/assets/img/mockup-ecommerce.png" class="card-img-top mx-auto" alt="mockup e-commerce project" loading="lazy"></a>
+                        <div class="card-body">
+                          <h3 class="card-title">JavaScript e-commerce project</h3>
+                          <div class="card-text">
+                            <h3 class="mb-4 card-title--highlight">Highlights:</h3>
+                                <ul>
+                                    <li>Total number of items in cart visible in navigation</li>
+                                    <li>Checkout cart functionality</li>
+                                    <li>Loads data from 'database'</li>
+                                    <li>Vanilla JavaScript project</li>
+                                </ul>
+                            
+                              <div class="expand-more-content" id="showMoreContent1">
+                                <p class="my-4">
+                                    <span class="title-expand-more">Total number of items in cart visible in navigation</span><br>
+                                   This badge will always be visible in the navigation. It shows the total amount of items in your cart. Thanks to local storage it will always show the right amount of items. One click brings you to the cart with the right amount of items and the right price
+                                </p>
+                                <p class="my-4">
+                                    <span class="title-expand-more">Checkout cart functionality</span><br>
+                                   You can add or remove items. It is also possible to clear the whole cart at once. At the bottom of the cart you can see the total amount before you purchase. 
+                                </p>
+                                <p class="my-4">
+                                    <span class="title-expand-more">Loads data from 'database'</span><br> 
+                                    The data for the items is coming from a different file. This file mimicks a database. When you add data to the file, the JavaScript will display the right price, name, image and description in the store dynamically.
+                                </p>
+                                <p class="my-4">
+                                    <span class="title-expand-more">Vanilla JavaScript project</span><br>
+                                    However it would probably be easier to use a framework to set up a store. This project was a great way to practice my vanilla JavaScript skills.
+                                  </p>
+                              </div>
+                              <div class="expand-more-holder">
+                                  <span expand-more data-hidetext="Show less" data-showtext="Read more" data-target="showMoreContent1" class="btn btn--secondary">Read more</span>
+                              </div>
+                        
+
+                          <div class="card-icon-wrapper my-5 gap-5">
+                            <svg class="card-icon">
+                                <use xlink:href="assets/img/sprite.svg#icon-html5" alt="HTML5 icon"></use>
+                            </svg>
+                            <svg class="card-icon">
+                                <use xlink:href="assets/img/sprite.svg#icon-css3" alt="CSS3 icon"></use>
+                            </svg>
+                            <svg class="card-icon">
+                                <use xlink:href="assets/img/sprite.svg#icon-javascript" alt="JavaScript icon"></use>
+                            </svg>
+                            <svg class="card-icon">
+                                <use xlink:href="assets/img/sprite.svg#icon-visualstudiocode" alt="VS Code icon"></use>
+                            </svg>
+                            <svg class="card-icon">
+                                <use xlink:href="assets/img/sprite.svg#icon-github" alt="Github icon"></use>
+                            </svg>
+                          </div>
+
+                          <div class="card-button__wrapper">
+                            <a href="https://e-commerce-project.anniek.it/" class="btn btn--lg btn--primary mb-4 mb-md-2 me-2">Go to live project</a>
+                            <a href="https://github.com/Keinna/e-commerce" class="btn btn--lg btn--primary mb-4 mb-md-2 me-2">Go to source code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 </div>
                 
                 <!-- item 4, previous portfolio -->

@@ -52,15 +52,14 @@
   margin-bottom: 0.4rem;
 }
 .expand-more-content {
-  height: 0px;
+  max-height: 0;
   overflow: hidden;
-  transition: height 0.35s ease;
+  transition: max-height 0.75s ease-in-out;
   position: relative;
 }
 
 .expand-more-content.expand-active {
-  height: auto;
-  transition: height 0.35s ease;
+  max-height: none;
 }
 
 .expand-more-holder {
@@ -76,7 +75,7 @@
 }
 
 .filter-item{
-  margin: 5px;
+  margin: 5px 5px;
 }
 .filter-item.active {
   background-color: $secondary;

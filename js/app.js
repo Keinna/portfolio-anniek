@@ -1,42 +1,44 @@
-// expand text in cards
-document.addEventListener('DOMContentLoaded', () => {
-  const expandsMore = document.querySelectorAll('[expand-more]')
+document.addEventListener("DOMContentLoaded", () => {
+    const expandsMore = document.querySelectorAll("[expand-more]");
 
-  function expand() {
-    const showContent = document.getElementById(this.dataset.target)
-    if (showContent.classList.contains('expand-active')) {
-      this.innerHTML = this.dataset.showtext
-    } else {
-      this.innerHTML = this.dataset.hidetext
+    function expand() {
+        const showContent = document.getElementById(this.dataset.target);
+        const contentHeight = showContent.scrollHeight + "px";
+
+        if (showContent.classList.contains("expand-active")) {
+            this.innerHTML = this.dataset.showtext;
+            showContent.style.maxHeight = 0;
+        } else {
+            this.innerHTML = this.dataset.hidetext;
+            showContent.style.maxHeight = contentHeight;
+        }
+
+        showContent.classList.toggle("expand-active");
     }
-    showContent.classList.toggle('expand-active')
-  }
 
-  expandsMore.forEach(expandMore => {
-    expandMore.addEventListener('click', expand)
-  })
-
-})
-
+    expandsMore.forEach((expandMore) => {
+        expandMore.addEventListener("click", expand);
+    });
+});
 
 //   scroll to top
 let calcScrollValue = () => {
-  let scrollProgress = document.getElementById("progress");
-  let progressValue = document.getElementById("progress-value");
-  let pos = document.documentElement.scrollTop;
-  let calcHeight =
-    document.documentElement.scrollHeight -
-    document.documentElement.clientHeight;
-  let scrollValue = Math.round((pos * 103) / calcHeight);
-  if (pos > 100) {
-    scrollProgress.style.display = "grid";
-  } else {
-    scrollProgress.style.display = "none";
-  }
-  scrollProgress.addEventListener("click", () => {
-    document.documentElement.scrollTop = 0;
-  });
-  scrollProgress.style.background = `conic-gradient(#00cccc ${scrollValue}%, #FFF ${scrollValue}%)`;
+    let scrollProgress = document.getElementById("progress");
+    let progressValue = document.getElementById("progress-value");
+    let pos = document.documentElement.scrollTop;
+    let calcHeight =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+    let scrollValue = Math.round((pos * 103) / calcHeight);
+    if (pos > 100) {
+        scrollProgress.style.display = "grid";
+    } else {
+        scrollProgress.style.display = "none";
+    }
+    scrollProgress.addEventListener("click", () => {
+        document.documentElement.scrollTop = 0;
+    });
+    scrollProgress.style.background = `conic-gradient(#00cccc ${scrollValue}%, #FFF ${scrollValue}%)`;
 };
 window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
@@ -61,41 +63,45 @@ const currentYear = new Date().getFullYear();
 const currentYearElement = document.getElementById("currentYear");
 currentYearElement.textContent = currentYear;
 
-
 //filter projects
 const projectCardsContainer = document.getElementById("projectCardsContainer");
-const projectCards = Array.from(projectCardsContainer.getElementsByClassName("project-card"));
+const projectCards = Array.from(
+    projectCardsContainer.getElementsByClassName("project-card"),
+);
 const filterWrapper = document.querySelector(".filter__wrapper");
 
 // Use event delegation to add event listener to filter wrapper
 filterWrapper.addEventListener("click", handleFilterClick);
 
 function handleFilterClick(event) {
-  // Check if clicked element is a filter item
-  if (!event.target.classList.contains("filter-item")) {
-    return;
-  }
-
-  // Remove active class from all filter items
-  filterWrapper.querySelectorAll(".filter-item").forEach((item) => {
-    item.classList.remove("active");
-  });
-
-  // Add active class to clicked filter item
-  event.target.classList.add("active");
-
-  // Get selected filter category
-  const selectedCategory = event.target.dataset.target;
-
-  // Loop through project cards
-  projectCards.forEach((card) => {
-    const cardCategories = card.dataset.categories.split(" ");
-
-    // Show/hide project cards based on filter
-    if (selectedCategory === "all" || cardCategories.includes(selectedCategory)) {
-      card.style.display = "block";
-    } else {
-      card.style.display = "none";
+    // Check if clicked element is a filter item
+    if (!event.target.classList.contains("filter-item")) {
+        return;
     }
-  });
+
+    // Remove active class from all filter items
+    filterWrapper.querySelectorAll(".filter-item").forEach((item) => {
+        item.classList.remove("active");
+    });
+
+    // Add active class to clicked filter item
+    event.target.classList.add("active");
+
+    // Get selected filter category
+    const selectedCategory = event.target.dataset.target;
+
+    // Loop through project cards
+    projectCards.forEach((card) => {
+        const cardCategories = card.dataset.categories.split(" ");
+
+        // Show/hide project cards based on filter
+        if (
+            selectedCategory === "all" ||
+            cardCategories.includes(selectedCategory)
+        ) {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+    });
 }
