@@ -59,10 +59,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const currentYearElement = document.getElementById("currentYear");
     currentYearElement.textContent = currentYear;
 
+    const loadMoreButton = document.getElementById("loadMore");
     const projectCardsContainer = document.getElementById(
         "projectCardsContainer",
     );
-    const projectCards = Array.from(
+    let projectCards = Array.from(
         projectCardsContainer.getElementsByClassName("project-card"),
     );
     const filterWrapper = document.querySelector(".filter__wrapper");
@@ -70,14 +71,55 @@ document.addEventListener("DOMContentLoaded", () => {
         "selectedProjectsCount",
     );
 
-    filterWrapper.addEventListener("click", handleFilterClick);
-
     let selectedProjectsCount = 0;
     let selectedCategory = "all";
+    let visibleCardsLimit = 6;
 
     function capitalizeFirstLetter(string) {
         return string.charAt(0).toUpperCase() + string.slice(1);
     }
+
+    function displayProjectCards() {
+        let visibleCardsCount = 0;
+
+        projectCards.forEach((card) => {
+            const cardCategories = card.dataset.categories.split(" ");
+
+            if (
+                selectedCategory === "all" ||
+                cardCategories.includes(selectedCategory)
+            ) {
+                if (visibleCardsCount < visibleCardsLimit) {
+                    card.style.display = "block";
+                    visibleCardsCount++;
+                } else {
+                    card.style.display = "none";
+                }
+                selectedProjectsCount++;
+            } else {
+                card.style.display = "none";
+            }
+        });
+
+        if (selectedCategory !== "all") {
+            selectedProjectsCountElement.textContent = `${capitalizeFirstLetter(
+                selectedCategory,
+            )} project(s): ${selectedProjectsCount}`;
+        } else {
+            selectedProjectsCountElement.textContent = "";
+        }
+
+        if (visibleCardsCount < projectCards.length) {
+            loadMoreButton.style.display = "block";
+        } else {
+            loadMoreButton.style.display = "none";
+        }
+    }
+
+    displayProjectCards();
+
+    filterWrapper.addEventListener("click", handleFilterClick);
+    loadMoreButton.addEventListener("click", handleLoadMoreClick);
 
     function handleFilterClick(event) {
         if (!event.target.classList.contains("filter-item")) {
@@ -94,27 +136,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
         selectedProjectsCount = 0;
 
-        projectCards.forEach((card) => {
-            const cardCategories = card.dataset.categories.split(" ");
-
-            if (
-                selectedCategory === "all" ||
-                cardCategories.includes(selectedCategory)
-            ) {
-                card.style.display = "block";
-                selectedProjectsCount++;
-            } else {
-                card.style.display = "none";
-            }
-        });
-
-        if (selectedCategory !== "all") {
-            selectedProjectsCountElement.textContent = `${capitalizeFirstLetter(
-                selectedCategory,
-            )} project(s): ${selectedProjectsCount}`;
-        } else {
-            selectedProjectsCountElement.textContent = "";
-        }
+        displayProjectCards();
     }
-});
+
+    function handleLoadMoreClick() {
+        visibleCardsLimit += 3;
+        displayProjectCards();
+    }
+});    
 
