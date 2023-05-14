@@ -21,7 +21,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-//   scroll to top
 let calcScrollValue = () => {
     let scrollProgress = document.getElementById("progress");
     let progressValue = document.getElementById("progress-value");
@@ -43,7 +42,6 @@ let calcScrollValue = () => {
 window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
 
-//trigger confetti on hover
 const confettiTrigger = document.querySelector("#confetti-trigger");
 confettiTrigger.addEventListener("mouseenter", startConfetti);
 
@@ -58,7 +56,6 @@ function startConfetti() {
     });
 }
 
-//update current year dynamically
 const currentYear = new Date().getFullYear();
 const currentYearElement = document.getElementById("currentYear");
 currentYearElement.textContent = currentYear;
@@ -72,7 +69,6 @@ const selectedProjectsCountElement = document.getElementById(
     "selectedProjectsCount",
 );
 
-// Use event delegation to add event listener to filter wrapper
 filterWrapper.addEventListener("click", handleFilterClick);
 
 let selectedProjectsCount = 0;
@@ -83,42 +79,34 @@ function capitalizeFirstLetter(string) {
 }
 
 function handleFilterClick(event) {
-    // Check if clicked element is a filter item
     if (!event.target.classList.contains("filter-item")) {
         return;
     }
 
-    // Remove active class from all filter items
     filterWrapper.querySelectorAll(".filter-item").forEach((item) => {
         item.classList.remove("active");
     });
 
-    // Add active class to clicked filter item
     event.target.classList.add("active");
 
-    // Get selected filter category
     selectedCategory = event.target.dataset.target;
 
-    // Reset the counter
     selectedProjectsCount = 0;
 
-    // Loop through project cards
     projectCards.forEach((card) => {
         const cardCategories = card.dataset.categories.split(" ");
 
-        // Show/hide project cards based on filter
         if (
             selectedCategory === "all" ||
             cardCategories.includes(selectedCategory)
         ) {
             card.style.display = "block";
-            selectedProjectsCount++; // Increment the counter
+            selectedProjectsCount++;
         } else {
             card.style.display = "none";
         }
     });
 
-    // Update the count display
     if (selectedCategory !== "all") {
         selectedProjectsCountElement.textContent = `${capitalizeFirstLetter(
             selectedCategory,
