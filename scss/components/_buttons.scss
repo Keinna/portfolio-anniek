@@ -49,6 +49,10 @@
   &--same-size{
     width: 11%;
   }
+
+  &--load{
+    width: 75%;
+  }
   @media (max-width: 575px) {
     &--same-size{
       width: 33%;

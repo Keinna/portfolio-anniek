@@ -212,16 +212,16 @@
             <div class="filter-item btn btn--lg btn--same-size btn--primary" data-target="react">React</div>
             <div class="filter-item btn btn--lg btn--same-size btn--primary" data-target="javascript">JavaScript</div>
             <div class="filter-item btn btn--lg btn--same-size btn--primary" data-target="bootstrap">Bootstrap</div>
-            <div class="filter-item btn btn--lg btn--same-size btn--primary" data-target="sass">Sass</div>
+            <div class="filter-item btn btn--lg btn--same-size btn--primary" data-target="sass">Sass/CSS</div>
             <div class="filter-item btn btn--lg btn--same-size btn--primary" data-target="animations">Animations</div>
             <div class="filter-item btn btn--lg btn--same-size btn--primary" data-target="webpack">Webpack</div>
         </div>
 
         <p id="selectedProjectsCount" class="selected-projects-count mb-5"></p>
 
-            <div class="row gapy-5" id="projectCardsContainer">
+            <div class="row justify-content-center gap-5" id="projectCardsContainer">
                 <!--item 1-->
-                <div class="col-md-6 my-2 project-card" data-categories="react">
+                <div class="col-md-5 my-2 project-card" data-categories="react">
                     <div class="card h-100">
                         <a href="https://github.com/Keinna/search-images-api-react"><img src="/assets/img/mockup-react-images-api.png" class="card-img-top mx-auto" alt="mockup react images api" loading="lazy"></a>
                         <div class="card-body">
@@ -287,7 +287,7 @@
                 </div>
                 </div>
 
-                <div class="col-md-6 my-2 project-card" data-categories="javascript bootstrap animations sass">
+                <div class="col-md-5 my-2 project-card" data-categories="javascript bootstrap animations sass">
                     <div class="card h-100">
                         <a href="/"><img src="/assets/img/mockup-portfolio.png" class="card-img-top mx-auto" alt="mockup portfolio" loading="lazy"></a>
                         <div class="card-body">
@@ -295,7 +295,7 @@
                           <div class="card-text">
                             <h3 class="mb-4 card-title--highlight">Highlights:</h3>
                                 <ul>
-                                    <li>Used sprite-SVG for all icons</li>
+                                    <li>Sprite-SVG for all icons</li>
                                     <li>Skip link</li>
                                     <li>Custom hamburgerbutton on mobile</li>
                                     <li>Scroll to top with progress</li>
@@ -360,15 +360,15 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 my-2 project-card" data-categories="javascript">
+                <div class="col-md-5 my-2 project-card" data-categories="javascript">
                     <div class="card h-100">
                         <a href="https://e-commerce-project.anniek.it/"><img src="/assets/img/mockup-ecommerce.png" class="card-img-top mx-auto" alt="mockup e-commerce project" loading="lazy"></a>
                         <div class="card-body">
-                          <h3 class="card-title">JavaScript e-commerce project</h3>
+                          <h3 class="card-title">JavaScript project</h3>
                           <div class="card-text">
                             <h3 class="mb-4 card-title--highlight">Highlights:</h3>
                                 <ul>
-                                    <li>Total number of items in cart visible in navigation</li>
+                                    <li>Display cart item count in navigation</li>
                                     <li>Checkout cart functionality</li>
                                     <li>Loads data from 'database'</li>
                                     <li>Vanilla JavaScript project</li>
@@ -376,7 +376,7 @@
                             
                               <div class="expand-more-content" id="showMoreContent1">
                                 <p class="my-4">
-                                    <span class="title-expand-more">Total number of items in cart visible in navigation</span><br>
+                                    <span class="title-expand-more">Display cart item count in navigation</span><br>
                                    This badge will always be visible in the navigation. It shows the total amount of items in your cart. Thanks to local storage it will always show the right amount of items. One click brings you to the cart with the right amount of items and the right price
                                 </p>
                                 <p class="my-4">
@@ -425,7 +425,7 @@
                 </div>
                 
                 <!-- item 4, previous portfolio -->
-                <div class="col-md-6 my-2 project-card" data-categories="javascript sass webpack">
+                <div class="col-md-5 my-2 project-card" data-categories="javascript sass webpack">
                     <div class="card h-100">
                         <a href="https://onepager-balloon.anniek.it/">
                         <img src="/assets/img/mockup-balloon.png" class="card-img-top mx-auto" alt="mockup previous portfolio" loading="lazy"></a>
@@ -502,7 +502,7 @@
                     </div>
                 </div>
                  <!-- item 5, sass-project -->
-                 <div class="col-md-6 my-2 project-card" data-categories="sass animations">
+                 <div class="col-md-5 my-2 project-card" data-categories="sass animations">
                     <div class="card h-100">
                         <a href="https://sass-project.anniek.it/"><img src="/assets/img/mockup-sass.png" class="card-img-top mx-auto" alt="mockup sass project" loading="lazy"></a>
                         <div class="card-body">
@@ -570,7 +570,7 @@
                     </div>
                 </div>
                  <!-- item 6, previous portfolio -->
-                <div class="col-md-6 my-2 project-card" data-categories="javascript sass animations">
+                <div class="col-md-5 my-2 project-card" data-categories="javascript sass animations">
                     <div class="card h-100">
                         <a href="https://previous-portfolio.anniek.it/"><img src="/assets/img/mockup-previous-portfolio.png" class="card-img-top mx-auto" alt="mockup previous portfolio" loading="lazy"></a>
                         <div class="card-body">
@@ -637,46 +637,44 @@
                     </div>
                 </div>
                 
-                <!--======================test=========================================================-->
-                <div class="col-md-6 my-2 project-card" data-categories="bootstrap webpack">
+                <div class="col-md-5 my-2 project-card" data-categories="sass javascript bootstrap">
                     <div class="card h-100">
-                        <a href="https://onepager-balloon.anniek.it/">
+                        <a href="https://theme-switcher.anniek.it/">
                         <img src="/assets/img/mockup-social-media-dashboard.png" class="card-img-top mx-auto" alt="mockup social media dashboard" loading="lazy"></a>
                         <div class="card-body">
                           <h5 class="card-title">Theme switcher</h5>
                           <div class="card-text">
                             <h3 class="mb-4 card-title--highlight">Highlights:</h3>
                             <ul>
-                                <li>Webpack</li>
-                                <li>Animations on scroll (JavaScript)</li>
-                                <li>Dev dependencies</li>
-                                <li>SourceSet</li>
+                                <li>CSS variables</li>
+                                <li>JavaScript toggle</li>
+                                <li>Bootstrap</li>
+                                <li>Challenge by Frontend Mentor</li>
                             </ul>
-                              <div class="expand-more-content" id="showMoreContent3">
+                              <div class="expand-more-content" id="showMoreContent7">
                                 <p class="my-4">
-                                    <span class="title-expand-more">Webpack</span><br>
-                                    Webpack was used as a module bundler for this project. Even though the project itself is not particularly large, it provided an excellent opportunity to practice working with webpack. I have learned how webpack behaves and handles the different files within the project.
+                                    <span class="title-expand-more">CSS variables</span><br>
+                                    To implement the dark and light themes, CSS variables are used to define the color palette and other styles. CSS variables provide a flexible way to store and reuse values throughout the CSS code. By defining key properties such as background color, text color, and accent colors as variables, it becomes effortless to switch between different themes by simply updating the variable values.
+
+                                    JavaScript plays a crucial role in enabling the dynamic switching between dark and light themes. When the user clicks on the theme switcher button, JavaScript detects the interaction and triggers the necessary actions. It accesses the CSS variables defined for the themes and dynamically updates their values to reflect the chosen theme.
                                 </p>
                                 <p class="my-4">
-                                <span class="title-expand-more">Animations on scroll (JavaScript)</span><br>
-                                Several animations are triggered based on scroll events. These captivating animations add further visual interest and interactivity to the page. For example, as you scroll, various elements come to life with dynamic transitions and transformations. In particular, the logo smoothly adjusts its width and height, creating an eye-catching effect. Moreover, the header undergoes a gradual color transformation, enhancing the overall visual experience. Thanks to the implementation of JavaScript, the active links are intelligently highlighted, ensuring users have a clear indication of their current position on the page.
+                                <span class="title-expand-more">JavaScript toggle</span><br>
+                                The localStorage object is used to store and retrieve the user's preference for the light or dark theme. When the user selects a theme, the code sets the "light-mode" key in the localStorage object to "set" using the localStorage.setItem() function. When the page is loaded, the code checks if the "light-mode" key exists in the localStorage object using the localStorage.getItem() function. If the key exists, it means that the user has previously selected the light theme, and the code applies the appropriate styles using the toggleRootClass() function.
+                                The click event listener on the theme switcher button calls both toggleLocalStorageItem() and toggleRootClass() functions to update the localStorage object and apply the appropriate styles, respectively.
                                 </p>
                                 <p class="my-4">
-                                <span class="title-expand-more">Worked with Dev dependencies</span><br> 
-                                Dev dependencies are an essential part of a developer's toolkit. These dependencies are used during the development phase to build, optimize, and streamline the project and are not required for the production environment. 
-                                
-                                In this project, some dev dependencies include "@babel/core," which is used for transpiling modern JavaScript code. Additionally, "webpack" and "webpack-cli" are utilized as a module bundler, while "webpack-dev-server" enables live reloading and a development server for a smooth development experience.
-                                
-                                Other dev dependencies like "postcss-loader," "css-loader," and "style-loader" contribute to handling CSS processing and module loading. The "html-webpack-plugin" simplifies the generation of HTML files, and the "clean-webpack-plugin" helps clean the build directory before each build. 
+                                <span class="title-expand-more">Bootstrap</span><br> 
+                                Bootstrap is a popular front-end framework for building responsive, mobile-first web pages. It provides a set of pre-built CSS classes and JavaScript plugins that make it easy to create common UI components and layouts. In this code, Bootstrap is used to style the social media cards and overview cards, as well as to make the dashboard responsive on different screen sizes. The use of Bootstrap helps to save time and effort in designing and developing the dashboard, and ensures a consistent look and feel across different devices and browsers.
                                 
                                 </p>
                                 <p class="my-4">
-                                <span class="title-expand-more">SourceSet</span><br> 
-                                To ensure responsiveness and optimize page loading, sourceset was employed on the images throughout the page. This technique allows for the selection of the most suitable image based on the device's characteristics. As a result, smaller devices receive smaller images, which not only enhances the page's responsiveness but also leads to faster loading times. By delegating the decision to the browser, the page becomes more efficient and delivers an optimal experience across different devices.
+                                <span class="title-expand-more">Challenge by Frontend Mentor</span><br> 
+                                This was a challenge created by Frontend Mentor. I took on this challenge because I think by participating in such challenges, you gain valuable hands-on experience in implementing real-world designs and applying your knowledge of HTML, CSS, and JavaScript. It allows you to explore different techniques, experiment with various design patterns, and tackle common development tasks.
                                 </p>
                               </div>
                               <div class="expand-more-holder">
-                                  <span expand-more data-hidetext="Show less" data-showtext="Read more" data-target="showMoreContent3" class="btn btn--secondary">Read more</span>
+                                  <span expand-more data-hidetext="Show less" data-showtext="Read more" data-target="showMoreContent7" class="btn btn--secondary">Read more</span>
                               </div>
                         
                           <div class="card-icon-wrapper my-5 gap-5">
@@ -690,251 +688,23 @@
                                 <use xlink:href="assets/img/sprite.svg#icon-javascript" alt="JavaScript icon"></use>
                             </svg>
                             <svg class="card-icon">
-                                <use xlink:href="assets/img/sprite.svg#icon-sass" alt="Sass icon"></use>
-                            </svg>
-                            <svg class="card-icon">
-                                <use xlink:href="assets/img/sprite.svg#icon-npm" alt="NPM icon"></use>
-                            </svg>
-                            <svg class="card-icon">
-                                <use xlink:href="assets/img/sprite.svg#icon-webpack" alt="Webpack icon"></use>
-                            </svg>
-                            <svg class="card-icon">
-                                <use xlink:href="assets/img/sprite.svg#icon-visualstudiocode" alt="VS Code icon"></use>
-                            </svg>
-                            <svg class="card-icon">
-                                <use xlink:href="assets/img/sprite.svg#icon-github" alt="Github icon"></use>
+                                <use xlink:href="assets/img/sprite.svg#icon-bootstrap" alt="Bootstrap icon"></use>
                             </svg>
                           </div>
     
                           <div class="card-button__wrapper">
-                            <a href="https://onepager-balloon.anniek.it/" class="btn btn--lg btn--primary mb-4 mb-md-2 me-2">Go to live project</a>
-                            <a href="https://github.com/Keinna/onepager-balloon" class="btn btn--lg btn--primary mb-4 mb-md-2 me-2">Go to source code</a>
+                            <a href="https://theme-switcher.anniek.it/" class="btn btn--lg btn--primary mb-4 mb-md-2 me-2">Go to live project</a>
+                            <a href="https://github.com/Keinna/social-media-dashboard-with-theme-switcher" class="btn btn--lg btn--primary mb-4 mb-md-2 me-2">Go to source code</a>
                             </div>
                         </div>
                     </div>
                     </div>
-                </div>
-                <div class="col-md-6 my-2 project-card" data-categories="bootstrap webpack">
-                    <div class="card h-100">
-                        <a href="https://onepager-balloon.anniek.it/">
-                        <img src="/assets/img/mockup-social-media-dashboard.png" class="card-img-top mx-auto" alt="mockup social media dashboard" loading="lazy"></a>
-                        <div class="card-body">
-                          <h5 class="card-title">Theme switcher</h5>
-                          <div class="card-text">
-                            <h3 class="mb-4 card-title--highlight">Highlights:</h3>
-                            <ul>
-                                <li>Webpack</li>
-                                <li>Animations on scroll (JavaScript)</li>
-                                <li>Dev dependencies</li>
-                                <li>SourceSet</li>
-                            </ul>
-                              <div class="expand-more-content" id="showMoreContent3">
-                                <p class="my-4">
-                                    <span class="title-expand-more">Webpack</span><br>
-                                    Webpack was used as a module bundler for this project. Even though the project itself is not particularly large, it provided an excellent opportunity to practice working with webpack. I have learned how webpack behaves and handles the different files within the project.
-                                </p>
-                                <p class="my-4">
-                                <span class="title-expand-more">Animations on scroll (JavaScript)</span><br>
-                                Several animations are triggered based on scroll events. These captivating animations add further visual interest and interactivity to the page. For example, as you scroll, various elements come to life with dynamic transitions and transformations. In particular, the logo smoothly adjusts its width and height, creating an eye-catching effect. Moreover, the header undergoes a gradual color transformation, enhancing the overall visual experience. Thanks to the implementation of JavaScript, the active links are intelligently highlighted, ensuring users have a clear indication of their current position on the page.
-                                </p>
-                                <p class="my-4">
-                                <span class="title-expand-more">Worked with Dev dependencies</span><br> 
-                                Dev dependencies are an essential part of a developer's toolkit. These dependencies are used during the development phase to build, optimize, and streamline the project and are not required for the production environment. 
-                                
-                                In this project, some dev dependencies include "@babel/core," which is used for transpiling modern JavaScript code. Additionally, "webpack" and "webpack-cli" are utilized as a module bundler, while "webpack-dev-server" enables live reloading and a development server for a smooth development experience.
-                                
-                                Other dev dependencies like "postcss-loader," "css-loader," and "style-loader" contribute to handling CSS processing and module loading. The "html-webpack-plugin" simplifies the generation of HTML files, and the "clean-webpack-plugin" helps clean the build directory before each build. 
-                                
-                                </p>
-                                <p class="my-4">
-                                <span class="title-expand-more">SourceSet</span><br> 
-                                To ensure responsiveness and optimize page loading, sourceset was employed on the images throughout the page. This technique allows for the selection of the most suitable image based on the device's characteristics. As a result, smaller devices receive smaller images, which not only enhances the page's responsiveness but also leads to faster loading times. By delegating the decision to the browser, the page becomes more efficient and delivers an optimal experience across different devices.
-                                </p>
-                              </div>
-                              <div class="expand-more-holder">
-                                  <span expand-more data-hidetext="Show less" data-showtext="Read more" data-target="showMoreContent3" class="btn btn--secondary">Read more</span>
-                              </div>
-                        
-                          <div class="card-icon-wrapper my-5 gap-5">
-                            <svg class="card-icon">
-                                <use xlink:href="assets/img/sprite.svg#icon-html5" alt="HTML5 icon"></use>
-                            </svg>
-                            <svg class="card-icon">
-                                <use xlink:href="assets/img/sprite.svg#icon-css3" alt="CSS3 icon"></use>
-                            </svg>
-                            <svg class="card-icon">
-                                <use xlink:href="assets/img/sprite.svg#icon-javascript" alt="JavaScript icon"></use>
-                            </svg>
-                            <svg class="card-icon">
-                                <use xlink:href="assets/img/sprite.svg#icon-sass" alt="Sass icon"></use>
-                            </svg>
-                            <svg class="card-icon">
-                                <use xlink:href="assets/img/sprite.svg#icon-npm" alt="NPM icon"></use>
-                            </svg>
-                            <svg class="card-icon">
-                                <use xlink:href="assets/img/sprite.svg#icon-webpack" alt="Webpack icon"></use>
-                            </svg>
-                            <svg class="card-icon">
-                                <use xlink:href="assets/img/sprite.svg#icon-visualstudiocode" alt="VS Code icon"></use>
-                            </svg>
-                            <svg class="card-icon">
-                                <use xlink:href="assets/img/sprite.svg#icon-github" alt="Github icon"></use>
-                            </svg>
-                          </div>
-    
-                          <div class="card-button__wrapper">
-                            <a href="https://onepager-balloon.anniek.it/" class="btn btn--lg btn--primary mb-4 mb-md-2 me-2">Go to live project</a>
-                            <a href="https://github.com/Keinna/onepager-balloon" class="btn btn--lg btn--primary mb-4 mb-md-2 me-2">Go to source code</a>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                <div class="col-md-6 my-2 project-card" data-categories="bootstrap webpack">
-                    <div class="card h-100">
-                        <a href="https://onepager-balloon.anniek.it/">
-                        <img src="/assets/img/mockup-social-media-dashboard.png" class="card-img-top mx-auto" alt="mockup social media dashboard" loading="lazy"></a>
-                        <div class="card-body">
-                          <h5 class="card-title">Theme switcher</h5>
-                          <div class="card-text">
-                            <h3 class="mb-4 card-title--highlight">Highlights:</h3>
-                            <ul>
-                                <li>Webpack</li>
-                                <li>Animations on scroll (JavaScript)</li>
-                                <li>Dev dependencies</li>
-                                <li>SourceSet</li>
-                            </ul>
-                              <div class="expand-more-content" id="showMoreContent3">
-                                <p class="my-4">
-                                    <span class="title-expand-more">Webpack</span><br>
-                                    Webpack was used as a module bundler for this project. Even though the project itself is not particularly large, it provided an excellent opportunity to practice working with webpack. I have learned how webpack behaves and handles the different files within the project.
-                                </p>
-                                <p class="my-4">
-                                <span class="title-expand-more">Animations on scroll (JavaScript)</span><br>
-                                Several animations are triggered based on scroll events. These captivating animations add further visual interest and interactivity to the page. For example, as you scroll, various elements come to life with dynamic transitions and transformations. In particular, the logo smoothly adjusts its width and height, creating an eye-catching effect. Moreover, the header undergoes a gradual color transformation, enhancing the overall visual experience. Thanks to the implementation of JavaScript, the active links are intelligently highlighted, ensuring users have a clear indication of their current position on the page.
-                                </p>
-                                <p class="my-4">
-                                <span class="title-expand-more">Worked with Dev dependencies</span><br> 
-                                Dev dependencies are an essential part of a developer's toolkit. These dependencies are used during the development phase to build, optimize, and streamline the project and are not required for the production environment. 
-                                
-                                In this project, some dev dependencies include "@babel/core," which is used for transpiling modern JavaScript code. Additionally, "webpack" and "webpack-cli" are utilized as a module bundler, while "webpack-dev-server" enables live reloading and a development server for a smooth development experience.
-                                
-                                Other dev dependencies like "postcss-loader," "css-loader," and "style-loader" contribute to handling CSS processing and module loading. The "html-webpack-plugin" simplifies the generation of HTML files, and the "clean-webpack-plugin" helps clean the build directory before each build. 
-                                
-                                </p>
-                                <p class="my-4">
-                                <span class="title-expand-more">SourceSet</span><br> 
-                                To ensure responsiveness and optimize page loading, sourceset was employed on the images throughout the page. This technique allows for the selection of the most suitable image based on the device's characteristics. As a result, smaller devices receive smaller images, which not only enhances the page's responsiveness but also leads to faster loading times. By delegating the decision to the browser, the page becomes more efficient and delivers an optimal experience across different devices.
-                                </p>
-                              </div>
-                              <div class="expand-more-holder">
-                                  <span expand-more data-hidetext="Show less" data-showtext="Read more" data-target="showMoreContent3" class="btn btn--secondary">Read more</span>
-                              </div>
-                        
-                          <div class="card-icon-wrapper my-5 gap-5">
-                            <svg class="card-icon">
-                                <use xlink:href="assets/img/sprite.svg#icon-html5" alt="HTML5 icon"></use>
-                            </svg>
-                            <svg class="card-icon">
-                                <use xlink:href="assets/img/sprite.svg#icon-css3" alt="CSS3 icon"></use>
-                            </svg>
-                            <svg class="card-icon">
-                                <use xlink:href="assets/img/sprite.svg#icon-javascript" alt="JavaScript icon"></use>
-                            </svg>
-                            <svg class="card-icon">
-                                <use xlink:href="assets/img/sprite.svg#icon-sass" alt="Sass icon"></use>
-                            </svg>
-                            <svg class="card-icon">
-                                <use xlink:href="assets/img/sprite.svg#icon-npm" alt="NPM icon"></use>
-                            </svg>
-                            <svg class="card-icon">
-                                <use xlink:href="assets/img/sprite.svg#icon-webpack" alt="Webpack icon"></use>
-                            </svg>
-                            <svg class="card-icon">
-                                <use xlink:href="assets/img/sprite.svg#icon-visualstudiocode" alt="VS Code icon"></use>
-                            </svg>
-                            <svg class="card-icon">
-                                <use xlink:href="assets/img/sprite.svg#icon-github" alt="Github icon"></use>
-                            </svg>
-                          </div>
-    
-                          <div class="card-button__wrapper">
-                            <a href="https://onepager-balloon.anniek.it/" class="btn btn--lg btn--primary mb-4 mb-md-2 me-2">Go to live project</a>
-                            <a href="https://github.com/Keinna/onepager-balloon" class="btn btn--lg btn--primary mb-4 mb-md-2 me-2">Go to source code</a>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                <div class="col-md-6 my-2 project-card" data-categories="bootstrap webpack">
-                    <div class="card h-100">
-                        <a href="https://onepager-balloon.anniek.it/">
-                        <img src="/assets/img/mockup-social-media-dashboard.png" class="card-img-top mx-auto" alt="mockup social media dashboard" loading="lazy"></a>
-                        <div class="card-body">
-                          <h5 class="card-title">Theme switcher</h5>
-                          <div class="card-text">
-                            <h3 class="mb-4 card-title--highlight">Highlights:</h3>
-                            <ul>
-                                <li>Webpack</li>
-                                <li>Animations on scroll (JavaScript)</li>
-                                <li>Dev dependencies</li>
-                                <li>SourceSet</li>
-                            </ul></div></div></div></div>
-                <div class="col-md-6 my-2 project-card" data-categories="bootstrap webpack">
-                    <div class="card h-100">
-                        <a href="https://onepager-balloon.anniek.it/">
-                        <img src="/assets/img/mockup-social-media-dashboard.png" class="card-img-top mx-auto" alt="mockup social media dashboard" loading="lazy"></a>
-                        <div class="card-body">
-                          <h5 class="card-title">Theme switcher</h5>
-                          <div class="card-text">
-                            <h3 class="mb-4 card-title--highlight">Highlights:</h3>
-                            <ul>
-                                <li>Webpack</li>
-                                <li>Animations on scroll (JavaScript)</li>
-                                <li>Dev dependencies</li>
-                                <li>SourceSet</li>
-                            </ul></div></div></div></div>
-                <div class="col-md-6 my-2 project-card" data-categories="bootstrap webpack">
-                    <div class="card h-100">
-                        <a href="https://onepager-balloon.anniek.it/">
-                        <img src="/assets/img/mockup-social-media-dashboard.png" class="card-img-top mx-auto" alt="mockup social media dashboard" loading="lazy"></a>
-                        <div class="card-body">
-                          <h5 class="card-title">Theme switcher</h5>
-                          <div class="card-text">
-                            <h3 class="mb-4 card-title--highlight">Highlights:</h3>
-                            <ul>
-                                <li>Webpack</li>
-                                <li>Animations on scroll (JavaScript)</li>
-                                <li>Dev dependencies</li>
-                                <li>SourceSet</li>
-                            </ul></div></div></div></div>
-                
+                </div>   
             </div>
-
-            <div class="btn btn--lg btn--primary my-5"id="loadMore">Load More</div>
-
-
-
+            <div class="d-flex justify-content-center">
+                <div class="btn btn--lg btn--primary btn--load my-5 "id="loadMore">Load More</div>
+            </div>
         </div>
-
-        <!-- available when more projects in portfolio
-            <div class="container">
-            <div class="container text-center my-4">     
-                <button class="btn btn--lg btn--primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Load more projects ...</button>          
-            </div>
-    
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="collapse multi-collapse" id="multiCollapseExample1">
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="collapse multi-collapse" id="multiCollapseExample2">
-                   
-                    </div>
-                </div>
-            </div>
-        </div> -->
     </section>
     
     <section class="skills has-mg" id="skills">
