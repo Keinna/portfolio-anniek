@@ -63,15 +63,24 @@ const currentYear = new Date().getFullYear();
 const currentYearElement = document.getElementById("currentYear");
 currentYearElement.textContent = currentYear;
 
-//filter projects
 const projectCardsContainer = document.getElementById("projectCardsContainer");
 const projectCards = Array.from(
     projectCardsContainer.getElementsByClassName("project-card"),
 );
 const filterWrapper = document.querySelector(".filter__wrapper");
+const selectedProjectsCountElement = document.getElementById(
+    "selectedProjectsCount",
+);
 
 // Use event delegation to add event listener to filter wrapper
 filterWrapper.addEventListener("click", handleFilterClick);
+
+let selectedProjectsCount = 0;
+let selectedCategory = "all";
+
+function capitalizeFirstLetter(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
 
 function handleFilterClick(event) {
     // Check if clicked element is a filter item
@@ -88,7 +97,10 @@ function handleFilterClick(event) {
     event.target.classList.add("active");
 
     // Get selected filter category
-    const selectedCategory = event.target.dataset.target;
+    selectedCategory = event.target.dataset.target;
+
+    // Reset the counter
+    selectedProjectsCount = 0;
 
     // Loop through project cards
     projectCards.forEach((card) => {
@@ -100,8 +112,22 @@ function handleFilterClick(event) {
             cardCategories.includes(selectedCategory)
         ) {
             card.style.display = "block";
+            selectedProjectsCount++; // Increment the counter
         } else {
             card.style.display = "none";
         }
     });
+
+    // Update the count display
+    if (selectedCategory !== "all") {
+        selectedProjectsCountElement.textContent = `${capitalizeFirstLetter(
+            selectedCategory,
+        )} project(s): ${selectedProjectsCount}`;
+    } else {
+        selectedProjectsCountElement.textContent = "";
+    }
 }
+
+
+
+

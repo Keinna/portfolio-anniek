@@ -1,12 +1,13 @@
 @import "custom";
 
+@import "components/typography";
 @import "components/buttons";
 @import "components/_base";
-@import "components/typography";
 @import "components/animations";
 @import "components/scroll-to-top";
 @import "components/cards";
 @import "components/tabs";
+@import "components/filter";
 
 @import "sections/navbar";
 @import "sections/about";

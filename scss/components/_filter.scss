@@ -1,0 +1,22 @@
+.filter__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .filter-item{
+    margin: 5px 5px;
+  }
+  .filter-item.active {
+    background-color: $secondary;
+  }
+
+  .selected-projects-count{
+    color: $accent;
+    text-align: center;
+    margin: 2rem 0;
+    font-family: $font-family-titles;
+    font-size: 24px;
+  }

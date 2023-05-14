@@ -25,7 +25,7 @@
 
   &--highlight{
     font-size: 24px;
-    font-family: 'DM Sans', sans-serif;
+    font-family: $font-family-body;
     font-weight: 700;
     color: $accent;
   }
@@ -66,18 +66,5 @@
   padding: 15px 0 0 0;
 }
 
-.filter__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
 
-.filter-item{
-  margin: 5px 5px;
-}
-.filter-item.active {
-  background-color: $secondary;
-}
 
