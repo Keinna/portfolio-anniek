@@ -1,6 +1,6 @@
 <div class="col-md-5 my-2 project-card" data-categories="{{categories}}">
   <div class="card h-100">
-    <a href="{{githubLink}}"><img src="{{imageSrc}}" class="card-img-top mx-auto" alt="{{imageAlt}}" loading="lazy"></a>
+    <a href="{{imageLink}}"><img src="{{imageSrc}}" class="card-img-top mx-auto" alt="{{imageAlt}}" loading="lazy"></a>
     <div class="card-body">
       <h3 class="card-title">{{title}}</h3>
       <div class="card-text">
@@ -29,10 +29,13 @@
           </svg>
           {{/each}}
         </div>
-
-        <div class="card-button__wrapper">
-          <a href="{{githubLink}}" class="btn btn--lg btn--primary mb-4 mb-md-2 me-2">Go to source code</a>
-        </div>
+<div class="card-button__wrapper">
+    {{#if liveProjectLink}}
+  <a href="{{liveProjectLink}}" class="btn btn--lg btn--primary mb-4 mb-md-2 me-2">Go to live project</a>
+  {{/if}}
+    <a href="{{sourceCodeLink}}" class="btn btn--lg btn--primary mb-4 mb-md-2 me-2">Go to source code</a>
+  
+</div>
       </div>
     </div>
   </div>
