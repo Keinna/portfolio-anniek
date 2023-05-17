@@ -58,6 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const currentYear = new Date().getFullYear();
     const currentYearElement = document.getElementById("currentYear");
     currentYearElement.textContent = currentYear;
+
     const loadMoreButton = document.getElementById("loadMore");
     const projectCardsContainer = document.getElementById(
         "projectCardsContainer",
@@ -83,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
         let categoryMatchCount = 0;
 
         projectCards.forEach((card) => {
-            const cardCategories = card.dataset.categories.split(" ");
+            const cardCategories = card.dataset.categories.split("~");
 
             if (
                 selectedCategory === "all" ||

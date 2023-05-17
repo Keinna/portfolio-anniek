@@ -1,0 +1,39 @@
+<div class="col-md-5 my-2 project-card" data-categories="{{categories}}">
+  <div class="card h-100">
+    <a href="{{githubLink}}"><img src="{{imageSrc}}" class="card-img-top mx-auto" alt="{{imageAlt}}" loading="lazy"></a>
+    <div class="card-body">
+      <h3 class="card-title">{{title}}</h3>
+      <div class="card-text">
+        <h3 class="mb-4 card-title--highlight">Highlights:</h3>
+        <ul>
+          {{#each highlights}}
+          <li>{{this}}</li>
+          {{/each}}
+        </ul>
+
+       <div class="expand-more-content" id="{{expandId}}">
+  {{#each paragraphs}}
+  <p class="my-4">
+    <span class="title-expand-more">{{title}}</span><br>
+    {{content}}
+  </p>
+  {{/each}}
+</div>
+<div class="expand-more-holder">
+  <span expand-more data-hidetext="Show less" data-showtext="Read more" data-target="{{expandId}}" class="btn btn--secondary">Read more</span>
+</div>
+        <div class="card-icon-wrapper my-5 gap-5">
+          {{#each icons}}
+          <svg class="card-icon">
+            <use xlink:href="{{this.src}}" alt="{{this.alt}}"></use>
+          </svg>
+          {{/each}}
+        </div>
+
+        <div class="card-button__wrapper">
+          <a href="{{githubLink}}" class="btn btn--lg btn--primary mb-4 mb-md-2 me-2">Go to source code</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
