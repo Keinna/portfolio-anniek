@@ -1,57 +1,3 @@
-// // Render the projects
-// function renderProjects() {
-//     const projectsContainer = document.querySelector('[data-render-container]');
-
-//     // Render each project using the template
-//     projects.forEach(function(project) {
-//         const projectCardHTML = projectCardTemplate(project);
-//         projectsContainer.innerHTML += projectCardHTML;
-//     });
-
-//     // Expand functionality
-//     const expandsMore = document.querySelectorAll("[expand-more]");
-
-//     function expand() {
-//         const showContent = document.getElementById(this.dataset.target);
-//         const contentHeight = showContent.scrollHeight + "px";
-
-//         if (showContent.classList.contains("expand-active")) {
-//             this.innerHTML = this.dataset.showtext;
-//             showContent.style.maxHeight = 0;
-//         } else {
-//             this.innerHTML = this.dataset.hidetext;
-//             showContent.style.maxHeight = contentHeight;
-//         }
-
-//         showContent.classList.toggle("expand-active");
-//     }
-
-//     expandsMore.forEach((expandMore) => {
-//         expandMore.addEventListener("click", expand);
-//         console.log("clicked");
-//     });
-
-//     console.log("expand more");
-// }
-
-// // Load the template from the external file
-// const templateRequest = new XMLHttpRequest();
-// templateRequest.open("GET", "project-template.hbs", true);
-// templateRequest.onreadystatechange = function() {
-//     if (templateRequest.readyState === 4 && templateRequest.status === 200) {
-//         // Compile the template once it is loaded
-//         projectCardTemplate = Handlebars.compile(templateRequest.responseText);
-
-//         // Call the function to render the projects
-//         renderProjects();
-//     }
-// };
-// templateRequest.send();
-
-// const projectsContainer = document.querySelector('[data-render-container]');
-
-
-
 // Render the projects
 function renderProjects() {
     const projectsContainer = document.querySelector('[data-render-container]');
@@ -81,7 +27,6 @@ function renderProjects() {
 
     expandsMore.forEach((expandMore) => {
         expandMore.addEventListener("click", expand);
-        console.log("clicked");
     });
 
     // Filter-related code here
@@ -161,8 +106,6 @@ function renderProjects() {
       visibleCardsLimit += 2;
       displayProjectCards();
     }
-  
-    console.log("Filter is loaded.");
   }
   
   // Load the template from the external file
@@ -179,5 +122,5 @@ function renderProjects() {
   };
   templateRequest.send();
   
-  const projectsContainer = document.querySelector('[data-render-container]');
+
   

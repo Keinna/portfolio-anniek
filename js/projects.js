@@ -29,7 +29,7 @@ var projects = [
                 content: "The images are displayed in a list format using a component called ImageList. The images are placed in a responsive grid."
             }
         ],
-        expandId: "showMoreContent5",
+        expandId: "showMoreContent1",
         icons: [
             { src: "assets/img/sprite.svg#icon-html5", alt: "HTML5 icon" },
             { src: "assets/img/sprite.svg#icon-css3", alt: "CSS3 icon" },
@@ -50,7 +50,7 @@ var projects = [
         paragraphs: [
           {
             title: "Sprite-SVG",
-            content: " First time I used a sprite-file with all the SVG's in it. You can access all the icons through this file. So you only have one http request (instead of 10 files). "
+            content: "First time I used a sprite-file with all the SVG's in it. You can access all the icons through this file. So you only have one http request (instead of 10 files)."
           },
           {
             title: "Skip link",
@@ -58,7 +58,7 @@ var projects = [
           },
           {
             title: "Custom hamburgerbutton",
-            content: "  This project has a custom hamburgerbutton. When you click it, one bar floats away. The other two make the cross."
+            content: "This project has a custom hamburgerbutton. When you click it, one bar floats away. The other two make the cross."
           },
           {
             title: "Scroll to top",
@@ -91,7 +91,7 @@ var projects = [
           },
           {
             title: "Checkout cart functionality",
-            content: " You can add or remove items. It is also possible to clear the whole cart at once. At the bottom of the cart you can see the total amount before you purchase."
+            content: "You can add or remove items. It is also possible to clear the whole cart at once. At the bottom of the cart you can see the total amount before you purchase."
           },
           {
             title: "Loads data from 'database'",
@@ -102,7 +102,7 @@ var projects = [
             content: "However it would probably be easier to use a framework to set up a store. This project was a great way to practice my vanilla JavaScript skills."
           }
         ],
-        expandId: "showMoreContent1",
+        expandId: "showMoreContent3",
         icons: [
             { src: "assets/img/sprite.svg#icon-html5", alt: "HTML5 icon" },
             { src: "assets/img/sprite.svg#icon-css3", alt: "CSS3 icon" },
@@ -136,7 +136,7 @@ var projects = [
             content: "To ensure responsiveness and optimize page loading, sourceset was employed on the images throughout the page. This technique allows for the selection of the most suitable image based on the device's characteristics. As a result, smaller devices receive smaller images, which not only enhances the page's responsiveness but also leads to faster loading times. By delegating the decision to the browser, the page becomes more efficient and delivers an optimal experience across different devices."
           }
         ],
-        expandId: "showMoreContent3",
+        expandId: "showMoreContent4",
         icons: [
             { src: "assets/img/sprite.svg#icon-html5", alt: "HTML5 icon" },
             { src: "assets/img/sprite.svg#icon-css3", alt: "CSS3 icon" },
@@ -158,11 +158,11 @@ var projects = [
         paragraphs: [
           {
             title: "Sass architecture",
-            content: "To build this project, Sass architecture is used. The Sass folder has several subfolders: abstracts, base, components, layout and pages. This makes it easier to manage large projects and keep the code organized.\n\nOne of the main benefits of using a CSS preprocessor like Sass is that it can make the development process more efficient. This is because Sass allows for features such as variables, mixins, and nesting, which can save time and effort when writing and maintaining code"
+            content: "To build this project, Sass architecture is used. The Sass folder has several subfolders: abstracts, base, components, layout and pages. This makes it easier to manage large projects and keep the code organized.\n\nOne of the main benefits of using a CSS preprocessor like Sass is that it can make the development process more efficient. This is because Sass allows for features such as variables, mixins, and nesting, which can save time and effort when writing and maintaining code."
           },
           {
             title: "Animations",
-            content: " This project has several animations. For example, take a look at the cards section. All cards have a flip animation. The card element has a 3D space created using the perspective rule, and two child elements representing the front and back sides of the card. The back side of the card is hidden by default using the transform and backface-visibility rules, and is revealed when the card is hovered over.\n\nOne of the main benefits is that animations can increase user engagement and drive conversion rates. Captivating animations can grab visitors' attention and guide them towards taking the desired action, such as signing up for a newsletter or clicking a call-to-action button or form field. "
+            content: " This project has several animations. For example, take a look at the cards section. All cards have a flip animation. The card element has a 3D space created using the perspective rule, and two child elements representing the front and back sides of the card. The back side of the card is hidden by default using the transform and backface-visibility rules, and is revealed when the card is hovered over.\n\nOne of the main benefits is that animations can increase user engagement and drive conversion rates. Captivating animations can grab visitors' attention and guide them towards taking the desired action, such as signing up for a newsletter or clicking a call-to-action button or form field."
           },
           {
             title: "Custom grid",
@@ -173,7 +173,7 @@ var projects = [
             content: "In this project, the BEM methodology is being used. BEM methodology is a way of structuring CSS code that remains simple and easy to understand. It provides a recognizable terminology and is less confusing than other methods. BEM can improve code maintainability, speed up the development process, and streamline the teamwork of developers by arranging CSS classes into independent modules. The methodology divides CSS classes into three entities: Block, Element, and Modifier"
           }
         ],
-        expandId: "showMoreContent6",
+        expandId: "showMoreContent5",
         icons: [
             { src: "assets/img/sprite.svg#icon-html5", alt: "HTML5 icon" },
             { src: "assets/img/sprite.svg#icon-css3", alt: "CSS3 icon" },
@@ -209,7 +209,7 @@ var projects = [
             content: "In this project, the BEM methodology is being used. BEM methodology is a way of structuring CSS code that remains simple and easy to understand. It provides a recognizable terminology and is less confusing than other methods. BEM can improve code maintainability, speed up the development process, and streamline the teamwork of developers by arranging CSS classes into independent modules. The methodology divides CSS classes into three entities: Block, Element, and Modifier."
           }
         ],
-        expandId: "showMoreContent4",
+        expandId: "showMoreContent6",
         icons: [
             { src: "assets/img/sprite.svg#icon-html5", alt: "HTML5 icon" },
             { src: "assets/img/sprite.svg#icon-css3", alt: "CSS3 icon" },
@@ -229,7 +229,7 @@ var projects = [
         paragraphs: [
           {
             title: "CSS variables",
-            content: " To implement the dark and light themes, CSS variables are used to define the color palette and other styles. CSS variables provide a flexible way to store and reuse values throughout the CSS code. By defining key properties such as background color, text color, and accent colors as variables, it becomes effortless to switch between different themes by simply updating the variable values.\n\nJavaScript plays a crucial role in enabling the dynamic switching between dark and light themes. When the user clicks on the theme switcher button, JavaScript detects the interaction and triggers the necessary actions. It accesses the CSS variables defined for the themes and dynamically updates their values to reflect the chosen theme."
+            content: "To implement the dark and light themes, CSS variables are used to define the color palette and other styles. CSS variables provide a flexible way to store and reuse values throughout the CSS code. By defining key properties such as background color, text color, and accent colors as variables, it becomes effortless to switch between different themes by simply updating the variable values.\n\nJavaScript plays a crucial role in enabling the dynamic switching between dark and light themes. When the user clicks on the theme switcher button, JavaScript detects the interaction and triggers the necessary actions. It accesses the CSS variables defined for the themes and dynamically updates their values to reflect the chosen theme."
           },
           {
             title: "JavaScript toggle",

@@ -40,6 +40,7 @@
   &--secondary {
     border: 2px solid $tertiary;
     background-color: transparent;
+    padding: 1rem 1rem;
   }
 
   &--lg {
@@ -47,15 +48,15 @@
   }
 
   &--same-size{
-    width: 11%;
+    width: 9vw;
   }
 
   &--load{
-    width: 75%;
+    width: 65vw;
   }
-  @media (max-width: 575px) {
+  @media (max-width: 1024px) {
     &--same-size{
-      width: 33%;
+      width: 20vw;
     }
   }
 }

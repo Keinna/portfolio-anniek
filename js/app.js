@@ -1,6 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-console.log('I have loaded')
-
     let calcScrollValue = () => {
         let scrollProgress = document.getElementById("progress");
         let progressValue = document.getElementById("progress-value");
@@ -35,8 +33,6 @@ console.log('I have loaded')
             shapes: ["star", "square", "square"],
         });
     }
-
-   
 
 const currentYear = new Date().getFullYear();
 const currentYearElement = document.getElementById("currentYear");
