@@ -45,7 +45,7 @@ var projects = [
         imageLink: "/",
         imageSrc: "/assets/img/mockup/mockup-portfolio.png",
         imageAlt: "mockup portfolio",
-        title: "Portfolio V1",
+        title: "Portfolio V2",
         highlights: ["Handlebars Templating", "Sprite-SVG", "Skip link", "Scroll to top with progress"],
         paragraphs: [
           {

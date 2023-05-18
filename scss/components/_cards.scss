@@ -44,6 +44,13 @@
 .card-text {
   margin: 1rem 0;
 }
+.project-card{
+  padding: 0 15px;
+
+  @media (min-width: 576px) {
+    padding: 0;
+  }
+}
 .title-expand-more {
   font-family: "Roboto", sans-serif;
   color: $tertiary;

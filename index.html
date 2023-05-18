@@ -91,7 +91,14 @@
                             <use xlink:href="assets/img/sprite.svg#icon-stars" alt="star-icon"></use>
                         </svg>
                         <div class="astronaut">
-                            <img src="/assets/img/astronaut.png" alt="astronaut" class="img-fluid" loading="lazy">
+                            <img src="/assets/img/astronaut.png"
+             srcset="/assets/img/astronaut-small.png 320w,
+                     /assets/img/astronaut-medium.png 640w,
+                     /assets/img/astronaut-large.png 1024w"
+             sizes="(max-width: 600px) 320px,
+                    (max-width: 1024px) 640px,
+                    1024px"
+             alt="astronaut" class="img-fluid" loading="lazy">
                         </div>
                 </div>
             </div>
