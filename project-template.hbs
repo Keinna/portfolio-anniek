@@ -1,6 +1,9 @@
 <div class="col-md-5 my-2 project-card" data-categories="{{categories}}">
   <div class="card">
-    <a href="{{imageLink}}"><img src="{{imageSrc}}" class="card-img-top mx-auto" alt="{{imageAlt}}" loading="lazy"></a>
+    <a href="{{imageLink}}">
+         <img src="{{imageSrc}}" class="card-img-top mx-auto" alt="{{imageAlt}}"
+       loading="lazy">
+    </a>
     <div class="card-body">
       <h3 class="card-title">{{title}}</h3>
       <div class="card-text">
@@ -12,16 +15,18 @@
         </ul>
 
        <div class="expand-more-content" id="{{expandId}}">
-  {{#each paragraphs}}
-  <p class="my-4">
-    <span class="title-expand-more">{{title}}</span><br>
-    {{content}}
-  </p>
-  {{/each}}
-</div>
-<div class="expand-more-holder">
-  <span expand-more data-hidetext="Show less" data-showtext="Read more" data-target="{{expandId}}" class="btn btn--secondary">Read more</span>
-</div>
+        {{#each paragraphs}}
+        <p class="my-4">
+            <span class="title-expand-more">{{title}}</span><br>
+           {{content}}
+        </p>
+        {{/each}}
+        </div>
+
+        <div class="expand-more-holder">
+            <span expand-more data-hidetext="Show less" data-showtext="Read more" data-target="{{expandId}}" class="btn btn--secondary">Read more</span>
+        </div>
+
         <div class="card-icon-wrapper my-5 gap-5">
           {{#each icons}}
           <svg class="card-icon">
@@ -29,13 +34,12 @@
           </svg>
           {{/each}}
         </div>
-<div class="card-button__wrapper">
-    {{#if liveProjectLink}}
-  <a href="{{liveProjectLink}}" class="btn btn--lg btn--primary mb-4 mb-md-2 me-2">Go to live project</a>
-  {{/if}}
-    <a href="{{sourceCodeLink}}" class="btn btn--lg btn--primary mb-4 mb-md-2 me-2">Go to source code</a>
-  
-</div>
+        <div class="card-button__wrapper">
+        {{#if liveProjectLink}}
+            <a href="{{liveProjectLink}}" class="btn btn--lg btn--primary mb-4 mb-md-2 me-2">Go to live project</a>
+        {{/if}}
+            <a href="{{sourceCodeLink}}" class="btn btn--lg btn--primary mb-4 mb-md-2 me-2">Go to source code</a>
+        </div>
       </div>
     </div>
   </div>

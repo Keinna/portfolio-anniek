@@ -2,7 +2,7 @@ var projects = [
     {
         categories: "react",
         imageLink: "https://github.com/Keinna/search-images-api-react",
-        imageSrc: "/assets/img/mockup-react-images-api.png",
+        imageSrc: "/assets/img/mockup/mockup-react-images-api.png",
         imageAlt: "mockup react images api",
         title: "React image fetcher (API)",
         highlights: [
@@ -43,11 +43,15 @@ var projects = [
     {
         categories: "javascript~bootstrap~animations~sass",
         imageLink: "/",
-        imageSrc: "/assets/img/mockup-portfolio.png",
+        imageSrc: "/assets/img/mockup/mockup-portfolio.png",
         imageAlt: "mockup portfolio",
         title: "Portfolio V1",
-        highlights: ["Sprite-SVG", "Skip link", "Custom hamburgerbutton", "Scroll to top with progress"],
+        highlights: ["Handlebars Templating", "Sprite-SVG", "Skip link", "Scroll to top with progress"],
         paragraphs: [
+          {
+            title: "Handlebars Templating",
+            content: "While adding more and more projects, I started to repeat myself. The HTML file was growing and growing, resulting in redundant code and maintenance challenges. In order to address these issues and improve code organization, I looked for a solution. That is when I discovered Handlebars templating.\nI created a separate 'projects-template.hbs' file. This template allowed me to define the structure and layout of a single project card. By embedding Handlebars expressions ({{...}}) within this template, I could specify dynamic content that would be replaced with actual values when the template is rendered.\nThis approach offers several advantages. Firstly, it greatly reduces code duplication and maintenance efforts. Instead of manually repeating the HTML structure for each project, I can now define it once in the template and reuse it for all projects. Any updates or modifications only need to be made in one place.\nSecondly, separating the template from the HTML file enhances readability and organization. It isolates the presentation logic, making it easier to understand and maintain the structure of the project card.\nMoreover, Handlebars templating provides a clean separation between the structure and the data. The project data, including titles, image links, highlights, and other relevant information, is stored in a separate 'projects.js' file. The renderProjects function retrieves the Handlebars template, compiles it using Handlebars, and dynamically generates the HTML for each project by iterating over the array of project data. This decoupling of data and presentation facilitates scalability and enables easy updates or additions to the project content without modifying the template itself."
+          },
           {
             title: "Sprite-SVG",
             content: "First time I used a sprite-file with all the SVG's in it. You can access all the icons through this file. So you only have one http request (instead of 10 files)."
@@ -55,10 +59,6 @@ var projects = [
           {
             title: "Skip link",
             content: "In my opnion skip links are important. They allow keyboard-only users, sighted or not, to navigate more easily through your page."
-          },
-          {
-            title: "Custom hamburgerbutton",
-            content: "This project has a custom hamburgerbutton. When you click it, one bar floats away. The other two make the cross."
           },
           {
             title: "Scroll to top",
@@ -80,7 +80,7 @@ var projects = [
     {
         categories: "javascript",
         imageLink: "https://e-commerce-project.anniek.it/",
-        imageSrc: "/assets/img/mockup-ecommerce.png",
+        imageSrc: "/assets/img/mockup/mockup-ecommerce.png",
         imageAlt: "mockup e-commerce project",
         title: "JavaScript project",
         highlights: ["Display cart item count in navigation", "Checkout cart functionality", "Loads data from 'database'", "Vanilla JavaScript project"],
@@ -114,7 +114,7 @@ var projects = [
         {
         categories: "javascript~webpack~sass",
         imageLink: "https://onepager-balloon.anniek.it/",
-        imageSrc: "/assets/img/mockup-balloon.png",
+        imageSrc: "/assets/img/mockup/mockup-balloon.png",
         imageAlt: "mockup balloon",
         title: "Webpack onepager",
         highlights: ["Webpack", "Animations on scroll (JavaScript)", "Dev dependencies", "Srcset"],
@@ -151,7 +151,7 @@ var projects = [
         {
         categories: "sass~animations",
         imageLink: "https://sass-project.anniek.it/",
-        imageSrc: "/assets/img/mockup-sass.png",
+        imageSrc: "/assets/img/mockup/mockup-sass.png",
         imageAlt: "mockup sass project",
         title: "Sass / BEM project",
         highlights: ["Sass architecture", "Animations", "Custom grid", "BEM methodology"],
@@ -187,7 +187,7 @@ var projects = [
         {
         categories: "javascript~sass~animations",
         imageLink: "https://previous-portfolio.anniek.it/",
-        imageSrc: "/assets/img/mockup-previous-portfolio.png",
+        imageSrc: "/assets/img/mockup/mockup-previous-portfolio.png",
         imageAlt: "mockup previous portfolio",
         title: "Previous portfolio",
         highlights: ["Work/projects filter (JavaScript)", "Inner and outer shadow effects", "Shows loader/spinner animation", "BEM methodology"],
@@ -222,7 +222,7 @@ var projects = [
       {
         categories: "javascript~sass~bootstrap",
         imageLink: "https://theme-switcher.anniek.it/",
-        imageSrc: "/assets/img/mockup-social-media-dashboard.png",
+        imageSrc: "/assets/img/mockup/mockup-social-media-dashboard.png",
         imageAlt: "mockup social media dashboard",
         title: "Theme switcher",
         highlights: ["CSS variables", "JavaScript toggle", "Bootstrap", "Challenge by Frontend Mentor"],
